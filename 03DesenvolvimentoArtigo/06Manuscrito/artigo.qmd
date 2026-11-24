@@ -119,7 +119,7 @@ Os objetivos específicos são:
 | OE2 — Sistematizar aplicações e resultados | QS2 e QS3 | RSL |
 | OE3 — Identificar governança e lacunas | QS4 | RSL e síntese crítica |
 
-: Correspondência entre objetivos, questões e procedimentos. {#tbl-objetivos}
+: Correspondência entre objetivos, questões e procedimentos. {#tbl-objetivos tbl-colwidths="[51, 20, 29]"}
 
 ## Relevância e contribuição do estudo
 
@@ -212,7 +212,7 @@ Os testes-piloto P0–P8 foram executados na Scopus em 15/09/2026. Foram avaliad
 | SciELO | 0 | Todos os índices; artigo; três blocos conceituais | Resultado zero registrado |
 | SciELO — controle | 2 | Busca tecnológica simplificada | Uso diagnóstico; não incorporados |
 
-: Resultados das buscas definitivas. {#tbl-buscas}
+: Resultados das buscas definitivas. {#tbl-buscas tbl-colwidths="[17, 12, 43, 28]"}
 
 As estratégias completas da Scopus e da Web of Science, copiadas conforme registradas no documento de estratégia, são apresentadas no Apêndice A. Para a SciELO, o apêndice preserva a configuração, o resultado zero e a busca de controle disponíveis. A expressão integral executada deverá ser transcrita diretamente da evidência original da plataforma antes da submissão do manuscrito, evitando sua reconstrução retrospectiva.
 
@@ -321,7 +321,7 @@ A registra o controle do estudo, B a identificação bibliográfica e C a caract
 | L · Lacunas e agenda | QS4 | 0 | 32 | 1 | 0 | DOC_0028 (M) |
 | **Total** | | **156** | **110** | **4** | **27** | |
 
-: Distribuição das classificações temáticas por bloco, questão de pesquisa e publicação ilustrativa. {#tbl-distribuicao-tematica tbl-colwidths="[32, 10, 8, 12, 8, 16, 14]"}
+: Distribuição das classificações temáticas por bloco, questão de pesquisa e publicação ilustrativa. {#tbl-distribuicao-tematica tbl-colwidths="[31, 10, 7, 12, 8, 17, 15]"}
 
 Os exemplos foram escolhidos entre as publicações com relação alta no bloco, exceto no bloco L, cujo exemplo tem relação moderada (M). Os identificadores remetem ao Apêndice B. Cada bloco tem 33 classificações, uma por publicação.
 
@@ -398,9 +398,10 @@ As aplicações incluem consultas a bases corporativas, recuperação contextual
 | Questionário com 496 respostas por conveniência [@gtsiDOC0006] | Associações estimadas por PLS-SEM | Evidência sobre percepções e relações no modelo. Causalidade e uso por logs ficaram fora da avaliação. |
 | Avaliação controlada com 19 empregados [@gtsiDOC0017] | Melhoria na qualidade da execução da tarefa avaliada | Resultado de qualidade no teste, com quantidade de trabalho e operação em produção fora do alcance demonstrado. |
 | Comparação em atendimento com grafo [@gtsiDOC0028] | Desempenho local em consultas reescritas e julgamento por GPT | Sensível às consultas, configurações e procedimento de avaliação. |
-| Cache e benchmark [@gtsiDOC0043; @gtsiDOC0052] | Cache pode evitar nova geração. RAG integra a construção do benchmark. | Separei acerto de cache de nova recuperação e geração, e a construção dos dados dos modelos avaliados posteriormente. |
+| Atendimento com cache [@gtsiDOC0043] | O acerto de cache pode evitar nova geração. | Separei o atendimento por cache de uma nova recuperação e geração. |
+| Construção de benchmark [@gtsiDOC0052] | RAG integra a construção do benchmark. | Distingui a construção do benchmark dos modelos avaliados posteriormente. |
 
-: Exemplos de resultados e limites de interpretação na RSL. {#tbl-evidencias-rsl}
+: Exemplos de resultados e limites de interpretação na RSL. {#tbl-evidencias-rsl tbl-colwidths="[30, 31, 39]"}
 
 Separei desempenho da busca, sustentação e correção factual, qualidade da decisão, percepções e resultados experimentais. Latência e custos descrevem a infraestrutura ou a execução avaliada. O *Validator* de DOC_0001 é um agente baseado em LLM [@gtsiDOC0001]. A execução local pode limitar a exposição de dados em certas configurações, e as citações facilitam a inspeção, mas segurança e correção factual requerem verificação específica [@gtsiDOC0039; @gtsiDOC0044].
 
@@ -448,7 +449,7 @@ Para **QS1 e OE1**, a bibliometria caracterizou 53 documentos distribuídos por 
 
 Para **QS2, QS3 e OE2**, a revisão de 33 publicações mostrou como a recuperação contextual pode apoiar consultas, elaboração de documentos e reúso de fontes organizacionais. Os desenhos e as métricas examinados oferecem evidência de ganhos em tarefas específicas. O efeito sobre a produtividade geral e a qualidade decisória ainda precisa ser medido.
 
-Para **QS4 e OE3**, a síntese identificou curadoria das fontes, documentação, rastreabilidade e revisão humana como condições para avaliar a aplicação. Os trabalhos em contextos educacionais e os achados de outros setores orientam hipóteses de uso. A aplicação na administração educacional requer verificação no processo em que será utilizada.
+Para **QS4 e OE3**, a síntese identificou curadoria das fontes, documentação, rastreabilidade e revisão humana como condições para avaliar a aplicação. Os trabalhos em contextos educacionais e os achados de outros setores orientam hipóteses de uso. A aplicação na administração educacional requer verificação no processo específico em que será utilizada.
 
 Estudos futuros podem adotar a busca convencional como referência para comparar as estratégias discutidas, com fontes versionadas, critérios explícitos e responsabilidades definidas. A avaliação pode medir recuperação, correção factual, qualidade decisória, custo, latência e esforço de revisão humana, além de acompanhar adoção e manutenção ao longo do tempo.
 

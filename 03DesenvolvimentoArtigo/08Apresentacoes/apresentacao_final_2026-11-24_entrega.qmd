@@ -724,8 +724,6 @@ format:
         .reveal .slides section.rsl-novos-dados table { width: 100%; font-size: 24px; margin-top: 35px; }
         .reveal .slides section.rsl-novos-dados table th, .reveal .slides section.rsl-novos-dados table td { padding: .48em .6em; white-space: normal; }
         .reveal .slides section.rsl-distribuicao table th,.reveal .slides section.rsl-distribuicao table td { padding: 8px 14px; }
-        .reveal .slides section.rsl-distribuicao table th:first-child { width: 37%; }
-        .reveal .slides section.rsl-distribuicao table th:last-child { width: 16%; }
         .reveal .slides section.conclusao-integrada .statement { margin: 18px 0 13px; font-size: 23px; line-height: 1.24; }
         .reveal .slides section.conclusao-integrada table { margin: 14px 0 16px; font-size: 23px; }
         .reveal .slides section.conclusao-integrada th:first-child { width: 31%; }
@@ -737,11 +735,18 @@ format:
         .reveal .slides section.selecao-larguras th:first-child {width:22%;}
         .reveal .slides section.selecao-larguras th:nth-child(2) {width:64%;}
         .reveal .slides section.selecao-larguras td:last-child,.reveal .slides section.selecao-larguras th:last-child {text-align:center;}
-        .reveal .slides section.rsl-distribuicao table th:first-child {width:31%;}
-        .reveal .slides section.rsl-distribuicao table th:last-child {width:13%;}
+        .reveal .slides section.rsl-distribuicao table {table-layout:fixed;}
+        .reveal .slides section.rsl-distribuicao table th:nth-child(1) {width:28%;}
+        .reveal .slides section.rsl-distribuicao table th:nth-child(2) {width:10%;}
+        .reveal .slides section.rsl-distribuicao table th:nth-child(3),
+        .reveal .slides section.rsl-distribuicao table th:nth-child(5) {width:8%;}
+        .reveal .slides section.rsl-distribuicao table th:nth-child(4) {width:12%;}
+        .reveal .slides section.rsl-distribuicao table th:nth-child(6) {width:19%;}
+        .reveal .slides section.rsl-distribuicao table th:last-child {width:15%;}
         .reveal .slides section.rsl-distribuicao table th:not(:first-child),.reveal .slides section.rsl-distribuicao table td:not(:first-child) {text-align:center;}
         .reveal .slides section.resultados-por-questao > table {position:absolute; top:46%; transform:translateY(-50%); width:90%; left:5%;}
-        .reveal .slides section.resultados-por-questao th:first-child {width:24%;}
+        .reveal .slides section.resultados-por-questao th:first-child {width:21%;}
+        .reveal .slides section.resultados-por-questao th:nth-child(2) {width:40%;}
         .reveal .slides section.resultados-por-questao td,.reveal .slides section.resultados-por-questao th {padding:16px 13px;vertical-align:middle;}
         .reveal .slides section.limitacoes-separadas table {width:100%; margin-top:38px;font-size:23px;}
         .reveal .slides section.limitacoes-separadas td,.reveal .slides section.limitacoes-separadas th {padding:15px; vertical-align:middle;}
@@ -1142,7 +1147,11 @@ Pesquisa bibliográfica aplicada, exploratória e descritiva, com abordagem quan
 
 ## Acesso ao projeto do artigo {.short-slide #acesso-projeto}
 
-<div class="statement">O endereço do repositório será inserido após a confirmação da publicação.</div>
+<div class="statement" style="padding: 1.4em; text-align: center;">
+<p style="margin: 0 0 0.7em;"><strong><a href="https://github.com/ManoloNasc/gtsi-memoria-organizacional-rag">Abrir o projeto no GitHub</a></strong></p>
+<p style="font-size: 0.72em; margin: 0 0 0.8em;">ManoloNasc/gtsi-memoria-organizacional-rag</p>
+<img src="figuras/qr_github_gtsi.png" width="320" height="320" alt="QR Code para abrir o projeto no GitHub" style="margin: 0;">
+</div>
 
 ## Referências {.references-combined}
 

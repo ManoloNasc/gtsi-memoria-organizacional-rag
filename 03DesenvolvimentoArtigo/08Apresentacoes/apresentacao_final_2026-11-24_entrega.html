@@ -1601,8 +1601,6 @@ border-top:1px solid var(--linha); text-align:left; box-sizing:border-box;
 .reveal .slides section.rsl-novos-dados table { width: 100%; font-size: 24px; margin-top: 35px; }
 .reveal .slides section.rsl-novos-dados table th, .reveal .slides section.rsl-novos-dados table td { padding: .48em .6em; white-space: normal; }
 .reveal .slides section.rsl-distribuicao table th,.reveal .slides section.rsl-distribuicao table td { padding: 8px 14px; }
-.reveal .slides section.rsl-distribuicao table th:first-child { width: 37%; }
-.reveal .slides section.rsl-distribuicao table th:last-child { width: 16%; }
 .reveal .slides section.conclusao-integrada .statement { margin: 18px 0 13px; font-size: 23px; line-height: 1.24; }
 .reveal .slides section.conclusao-integrada table { margin: 14px 0 16px; font-size: 23px; }
 .reveal .slides section.conclusao-integrada th:first-child { width: 31%; }
@@ -1614,11 +1612,18 @@ border-top:1px solid var(--linha); text-align:left; box-sizing:border-box;
 .reveal .slides section.selecao-larguras th:first-child {width:22%;}
 .reveal .slides section.selecao-larguras th:nth-child(2) {width:64%;}
 .reveal .slides section.selecao-larguras td:last-child,.reveal .slides section.selecao-larguras th:last-child {text-align:center;}
-.reveal .slides section.rsl-distribuicao table th:first-child {width:31%;}
-.reveal .slides section.rsl-distribuicao table th:last-child {width:13%;}
+.reveal .slides section.rsl-distribuicao table {table-layout:fixed;}
+.reveal .slides section.rsl-distribuicao table th:nth-child(1) {width:28%;}
+.reveal .slides section.rsl-distribuicao table th:nth-child(2) {width:10%;}
+.reveal .slides section.rsl-distribuicao table th:nth-child(3),
+.reveal .slides section.rsl-distribuicao table th:nth-child(5) {width:8%;}
+.reveal .slides section.rsl-distribuicao table th:nth-child(4) {width:12%;}
+.reveal .slides section.rsl-distribuicao table th:nth-child(6) {width:19%;}
+.reveal .slides section.rsl-distribuicao table th:last-child {width:15%;}
 .reveal .slides section.rsl-distribuicao table th:not(:first-child),.reveal .slides section.rsl-distribuicao table td:not(:first-child) {text-align:center;}
 .reveal .slides section.resultados-por-questao > table {position:absolute; top:46%; transform:translateY(-50%); width:90%; left:5%;}
-.reveal .slides section.resultados-por-questao th:first-child {width:24%;}
+.reveal .slides section.resultados-por-questao th:first-child {width:21%;}
+.reveal .slides section.resultados-por-questao th:nth-child(2) {width:40%;}
 .reveal .slides section.resultados-por-questao td,.reveal .slides section.resultados-por-questao th {padding:16px 13px;vertical-align:middle;}
 .reveal .slides section.limitacoes-separadas table {width:100%; margin-top:38px;font-size:23px;}
 .reveal .slides section.limitacoes-separadas td,.reveal .slides section.limitacoes-separadas th {padding:15px; vertical-align:middle;}
@@ -2929,8 +2934,14 @@ Fundamentação complementar ao corpus da RSL. Os testes das fontes descrevem de
 </section>
 <section id="acesso-projeto" class="slide level2 short-slide">
 <h2>Acesso ao projeto do artigo</h2>
-<div class="statement">
-O endereço do repositório será inserido após a confirmação da publicação.
+<div class="statement" style="padding: 1.4em; text-align: center;">
+<p style="margin: 0 0 0.7em;">
+<strong><a href="https://github.com/ManoloNasc/gtsi-memoria-organizacional-rag">Abrir o projeto no GitHub</a></strong>
+</p>
+<p style="font-size: 0.72em; margin: 0 0 0.8em;">
+ManoloNasc/gtsi-memoria-organizacional-rag
+</p>
+<p><img role="img" aria-label="QR Code para abrir o projeto no GitHub" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADK0lEQVR4nO1cbYqjQBCtVmF+KuQAOYreYI8U5kh7A/soOcCA/lxQaqmPVrOwsJIhrun3foi2KUari1dVr9sJTLsRi/02RDBywBEOOMIBRzjgCAcc4YAjzuSI4KgodMutqEPNHIjG9IPuPO+0EzB6dETLgmGNA6LQ1czcS7x0VOr9VIXCexk4YnQCsJnvxxCovevhw+JAGeSwx9sFGD3jiOqP60D1V0UtzxXHq3MC0/j4I7g8I0dwLxniUyqK2yAlRD1ta4ujH++fAKPv4Iha+GChgna4TBSDUAaVkw5tlSy4/P0dEZd68nb3hiPchpKplWqTaLZW46jH2wcYPc8RvA7Eq3BCPRHH6y/LGs4gK+Dyt3dE6KS5EKJgvkuQjEIUY0X8qcwwVkSxmaFHnHFy98LaTR78zNNEvWgPwhZ6V0pO0y36//ydChg9HREkM02kQtRQMvcSEa2eaf9hqWNyJQsRkUFEkOqTygw28XIYtmKmRwkiIpOs0UtKoOUgwaDMYMp2Ki8d4IgcssawnqWeU4hi5Q3LH4iInDiCpYRI9LBWlttqExGRkWb5JdqDCRBV0LDQ8fiDiGNTTqH9WU3neKcCRs/rETftK0R2oFEWO5MeoQdDbL7jL+0EjA7rNWhRJlKbYT2nq9hScqLXyCJg6aGeLNPGmNRcpDhIUYLKMhMj/mzmYKSgUrYWmj3NImrr+pZzBHbVnXByn1GoSC+VDzQiXL3ctiPQIzKqI8hyhZ09jFmAoI7IaqWLkz7ZPixzrFHi5AGOyESPiF3JQaQI2R1TMY2XSUlCDtKMNrIBc8Be7Mx6jW0S0TShvOE3vOEAR2STNRw26LJ1akEtiWiACLDSldM3XYbYbLdY2h6qhUZO8k47AaO/fdPVKgvY6BICSaiAHvH+YUSWK1oNBtUsh+WG7aVLWDfQIGtk9U1X208VS8MRZAe27sfXS1sAffXjFTA63BExfLBWFEYPVj2kBVCnDMyTI4dvupjGi1wOQg+6IWIOJLwRWlYGee3jFTA6VMWmJEos9OCiRJIs0H2+f8AG/GeyU8xTASMDHOGAIxxwhAOOcMARjtc54jcGVWeJNKmwqwAAAABJRU5ErkJggg==" width="320" height="320" alt="QR Code para abrir o projeto no GitHub" style="margin: 0;"></p>
 </div>
 </section>
 <section id="referências" class="slide level2 references-combined">
