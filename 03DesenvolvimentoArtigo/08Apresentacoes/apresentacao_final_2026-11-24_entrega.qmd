@@ -1,0 +1,1155 @@
+---
+pagetitle: "GTSI — Resultados finais da revisão sistemática"
+lang: pt-BR
+link-citations: true
+suppress-bibliography: true
+bibliography:
+  - ../02Referencias/referencias_artigo.bib
+format:
+  revealjs:
+    theme: figuras/tema_status_local.scss
+    width: 1600
+    height: 900
+    margin: 0.045
+    center: false
+    controls: false
+    progress: true
+    slide-number: "c/t"
+    transition: fade
+    background-transition: fade
+    hash: true
+    embed-resources: true
+    footer: "Gestão da Tecnologia e Sistemas de Informação"
+    include-in-header:
+      text: |
+        <style>
+        :root {
+          --azul: #006a92;
+          --azul-escuro: #17323f;
+          --azul-claro: #eaf4f7;
+          --cinza: #56656d;
+          --cinza-claro: #eef2f3;
+          --linha: #bfd3db;
+          --vermelho: #b71918;
+        }
+
+        .reveal {
+          font-family: "Inter", "Segoe UI Variable Text", "Segoe UI", Arial, sans-serif;
+          color: var(--azul-escuro);
+          font-size: 30px;
+        }
+
+        .reveal .slides {
+          text-align: left;
+        }
+
+        .reveal .slides section {
+          box-sizing: border-box;
+          padding: 38px 50px 46px;
+        }
+
+        .reveal h2 {
+          font-family: "Manrope", "Segoe UI Variable Display", "Segoe UI", Arial, sans-serif;
+          color: var(--azul-escuro);
+          font-size: 1.55em;
+          font-weight: 700;
+          line-height: 1.08;
+          margin: 0 0 0.78em;
+          padding-bottom: 0.18em;
+          border-bottom: 3px solid var(--azul);
+          letter-spacing: -0.02em;
+        }
+
+        /* Logo institucional nos slides internos, acima da numeração. */
+        .reveal .slides section:not(.cover-slide)::after {
+          content: "";
+          position: absolute;
+          right: 48px;
+          bottom: 44px;
+          width: 205px;
+          height: 70px;
+          background-size: contain;
+          z-index: 2;
+          pointer-events: none;
+        }
+
+        .reveal h3 {
+          font-family: "Manrope", "Segoe UI Variable Display", "Segoe UI", Arial, sans-serif;
+          color: var(--azul);
+          font-size: 0.92em;
+          margin: 0 0 0.18em;
+        }
+
+        .reveal p,
+        .reveal li {
+          line-height: 1.25;
+        }
+
+        .reveal strong {
+          color: var(--azul);
+        }
+
+        .reveal .slide-number {
+          color: #607078;
+          font-size: 16px;
+          right: 28px;
+          bottom: 14px;
+        }
+
+        .reveal .footer {
+          color: #718088;
+          font-size: 14px;
+          left: 50%;
+          bottom: 14px;
+          transform: translateX(-50%);
+        }
+
+        .cover-slide {
+          text-align: center !important;
+        }
+
+        .cover-slide h2 {
+          max-width: 1120px;
+          margin: 260px auto 16px;
+          padding: 0;
+          border: 0;
+          color: var(--azul-escuro);
+          font-size: 1.78em;
+          line-height: 1.05;
+        }
+
+        .cover-brand {
+          position: absolute;
+          top: 25px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .cover-brand img {
+          width: 250px;
+          height: auto;
+        }
+
+        .cover-subtitle {
+          max-width: 1050px;
+          margin: 0 auto 50px;
+          color: var(--azul);
+          font-size: 0.82em;
+          font-weight: 650;
+          line-height: 1.2;
+        }
+
+        .cover-meta {
+          color: var(--cinza);
+          font-size: 0.64em;
+          line-height: 1.5;
+        }
+
+        .question {
+          color: var(--azul-escuro);
+          font-size: 1.02em;
+          font-weight: 650;
+          line-height: 1.24;
+          margin: 0.35em 0 1.05em;
+        }
+
+        .project-title-clean {
+          margin: 0 0 24px;
+          padding: 0 0 14px;
+          border-bottom: 1px solid var(--linha);
+          color: var(--cinza);
+          font-size: 0.67em;
+          line-height: 1.25;
+        }
+
+        .project-title-clean .label {
+          display: block;
+          color: var(--azul);
+          font-size: 0.72em;
+          font-weight: 750;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+        }
+
+        .project-title-clean strong {
+          color: var(--azul-escuro);
+          font-weight: 650;
+        }
+
+        .kicker {
+          color: var(--azul);
+          font-size: 0.60em;
+          font-weight: 750;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          margin-bottom: 0.18em;
+        }
+
+        .statement {
+          border-left: 6px solid var(--azul);
+          background: var(--azul-claro);
+          padding: 20px 26px;
+          margin: 14px 0 26px;
+          font-size: 0.76em;
+          line-height: 1.28;
+        }
+
+        .columns {
+          gap: 44px;
+          margin-top: 12px;
+        }
+
+        .flat-column {
+          border-top: 4px solid var(--azul);
+          padding-top: 17px;
+        }
+
+        .flat-column p,
+        .flat-column li {
+          font-size: 0.69em;
+        }
+
+        .compact-list {
+          margin-top: 0.18em !important;
+        }
+
+        .compact-list li {
+          margin-bottom: 0.24em;
+        }
+
+        .metric-row {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 28px;
+          margin: 12px 0 28px;
+        }
+
+        .metric {
+          border-top: 4px solid var(--azul);
+          padding-top: 8px;
+        }
+
+        .metric .value {
+          color: var(--azul);
+          font-size: 1.55em;
+          font-weight: 760;
+          line-height: 1;
+        }
+
+        .metric .label {
+          color: var(--cinza);
+          font-size: 0.55em;
+          line-height: 1.15;
+          margin-top: 7px;
+        }
+
+        .method-lanes {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 54px;
+          margin-top: 34px;
+        }
+
+        .method-lane {
+          border-top: 5px solid var(--azul);
+          padding-top: 16px;
+        }
+
+        .method-lane .corpus {
+          color: var(--azul);
+          font-size: 1.5em;
+          font-weight: 760;
+          margin: 8px 0 4px;
+        }
+
+        .method-lane p,
+        .method-lane li {
+          font-size: 0.68em;
+        }
+
+        .control-line {
+          margin-top: 36px;
+          padding-top: 16px;
+          border-top: 1px solid var(--linha);
+          color: var(--cinza);
+          font-size: 0.61em;
+        }
+
+        .timeline {
+          display: grid;
+          grid-template-columns: 170px 1fr;
+          column-gap: 24px;
+          row-gap: 17px;
+          align-items: start;
+          margin-top: 28px;
+        }
+
+        .timeline .date {
+          color: var(--azul);
+          font-weight: 750;
+          font-size: 0.73em;
+        }
+
+        .timeline .event {
+          padding-bottom: 10px;
+          border-bottom: 1px solid var(--linha);
+          font-size: 0.69em;
+        }
+
+        .evidence-line {
+          margin: 20px 0 0;
+          border-top: 1px solid var(--linha);
+          padding-top: 13px;
+          color: var(--cinza);
+          font-size: 0.61em;
+        }
+
+        .ask {
+          margin-top: 28px;
+          border-left: 6px solid var(--vermelho);
+          background: #fbf1f1;
+          padding: 13px 20px;
+          font-size: 0.64em;
+        }
+
+        .figure-pair {
+          display: grid;
+          grid-template-columns: 0.72fr 1.28fr;
+          gap: 34px;
+          align-items: center;
+          margin-top: 10px;
+        }
+
+        .figure-pair img {
+          display: block;
+          max-width: 100%;
+          max-height: 300px;
+          margin: 0 auto;
+          object-fit: contain;
+        }
+
+        .figure-panel.network img {
+          width: 100%;
+          max-height: 365px;
+        }
+
+        .figure-panel.annual img {
+          max-height: 275px;
+        }
+
+        .search-evolution {
+          display: grid;
+          grid-template-columns: 1.25fr 1fr 1fr 1.15fr;
+          gap: 28px;
+          align-items: start;
+          margin: 8px 0 22px;
+        }
+
+        .search-step {
+          border-top: 3px solid var(--azul);
+          padding-top: 11px;
+        }
+
+        .search-step h3 {
+          margin-bottom: 5px;
+          font-size: 0.72em;
+        }
+
+        .search-step p {
+          margin: 0;
+          color: var(--cinza);
+          font-size: 0.52em;
+          line-height: 1.22;
+        }
+
+        .reveal pre.search-code {
+          width: auto;
+          max-height: none;
+          height: auto;
+          margin: 0;
+          padding: 15px 20px;
+          border: 1px solid var(--linha);
+          border-left: 5px solid var(--azul);
+          background: #f7fafb;
+          box-shadow: none;
+          color: #243942;
+          font-family: "Cascadia Code", "Aptos Mono", Consolas, monospace;
+          font-size: 0.43em;
+          line-height: 1.13;
+          white-space: pre-wrap;
+          overflow: visible;
+        }
+
+        .database-note {
+          margin-top: 20px;
+          padding: 14px 20px;
+          border-left: 5px solid #d5a84a;
+          background: #fff8e7;
+          color: var(--cinza);
+          font-size: 0.58em;
+          line-height: 1.24;
+        }
+
+        .single-figure {
+          text-align: center;
+          margin-top: 8px;
+        }
+
+        .single-figure img {
+          display: block;
+          width: auto;
+          max-width: 86%;
+          max-height: 420px;
+          margin: 0 auto;
+          object-fit: contain;
+        }
+
+        .network-layout {
+          display: grid;
+          grid-template-columns: 1.45fr 0.55fr;
+          gap: 38px;
+          align-items: center;
+          margin-top: 8px;
+        }
+
+        .network-main img {
+          display: block;
+          width: 100%;
+          max-height: 500px;
+          margin: 0 auto;
+          object-fit: contain;
+        }
+
+        .network-explanation {
+          border-top: 4px solid var(--azul);
+          padding-top: 16px;
+        }
+
+        .network-explanation .network-legend,
+        .network-explanation .normalization-note {
+          font-size: 0.54em;
+          line-height: 1.24;
+        }
+
+        .audit-strip {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 34px;
+          margin-top: 22px;
+          padding-top: 15px;
+          border-top: 1px solid var(--linha);
+        }
+
+        .audit-strip h3 {
+          margin-bottom: 5px;
+          font-size: 0.70em;
+        }
+
+        .audit-strip p {
+          margin: 0;
+          color: var(--cinza);
+          font-size: 0.56em;
+          line-height: 1.24;
+        }
+
+        .environment-lead {
+          margin: 8px 0 28px;
+          color: var(--azul-escuro);
+          font-size: 0.78em;
+          line-height: 1.28;
+        }
+
+        .environment-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 28px;
+        }
+
+        .environment-item {
+          border-top: 4px solid var(--azul);
+          padding-top: 14px;
+        }
+
+        .environment-item .tool {
+          color: var(--azul);
+          font-size: 0.88em;
+          font-weight: 760;
+          line-height: 1.1;
+        }
+
+        .environment-item .version {
+          color: var(--cinza);
+          font-size: 0.48em;
+          margin: 4px 0 10px;
+        }
+
+        .environment-item p {
+          margin: 0;
+          font-size: 0.60em;
+          line-height: 1.26;
+        }
+
+        .repro-line {
+          margin-top: 34px;
+          padding: 15px 20px;
+          border-left: 5px solid #6aa786;
+          background: #edf7f1;
+          color: var(--cinza);
+          font-size: 0.58em;
+          line-height: 1.26;
+        }
+
+        .figure-caption {
+          color: var(--cinza);
+          font-size: 0.48em;
+          text-align: center;
+          margin-top: 2px;
+        }
+
+        .reveal .mermaid {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #ffffff !important;
+          margin: 10px 0 18px;
+        }
+
+        .reveal .mermaid svg {
+          max-height: 610px !important;
+        }
+
+        .small-source p { font-size: 1em !important; line-height: inherit; margin: 0; }
+        .small-source {
+          color: var(--cinza);
+          font-size: 0.46em;
+          margin-top: 16px;
+        }
+
+        .status-flow {
+          display: grid;
+          grid-template-columns: 0.8fr 1.2fr;
+          gap: 46px;
+          margin-top: 28px;
+        }
+
+        .status-number {
+          color: var(--azul);
+          font-size: 3.25em;
+          font-weight: 780;
+          line-height: 0.95;
+        }
+
+        .status-label {
+          color: var(--cinza);
+          font-size: 0.68em;
+          line-height: 1.18;
+          margin: 10px 0 30px;
+        }
+
+        .status-rules {
+          border-top: 4px solid var(--azul);
+          padding-top: 14px;
+        }
+
+        .status-rules li {
+          font-size: 0.72em;
+          margin-bottom: 0.55em;
+        }
+
+        .reveal table {
+          font-size: 0.64em;
+        }
+
+        .reveal blockquote {
+          width: auto;
+          box-shadow: none;
+        }
+
+        .network-legend {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 5px;
+          margin: 5px 0 0;
+          color: var(--cinza);
+          font-size: 0.43em;
+          line-height: 1.18;
+        }
+        .legend-item { display: flex; align-items: flex-start; gap: 7px; }
+        .swatch { flex: 0 0 12px; width: 12px; height: 12px; margin-top: 2px; border-radius: 50%; }
+        .swatch.orange { background: #d95f02; }
+        .swatch.green { background: #1b9e77; }
+        .normalization-note { margin-top: 7px; color: var(--cinza); font-size: 0.41em; line-height: 1.18; }
+        .stage-note { margin-top: 18px; padding-top: 13px; border-top: 1px solid var(--linha); color: var(--cinza); font-size: 0.58em; line-height: 1.22; }
+
+        @media print {
+          .reveal .footer {
+            display: block;
+          }
+        }
+        
+        .reveal .slides section {padding:30px 44px 56px;}
+        .reveal h2 {font-size:1.42em;margin-bottom:.58em;}
+        .reveal .slides section:not(.cover-slide)::after {width:190px;height:68px;right:34px;bottom:24px;background-size:145px 145px;background-position:center;background-repeat:no-repeat;}
+        .cover-slide h2 {margin:235px auto 24px;max-width:1260px;font-size:1.82em;}
+        .cover-brand {top:48px;width:440px;height:160px;overflow:hidden;}
+        .cover-brand img {position:absolute;left:50%;top:50%;transform:translate(-50%,-55%);width:400px;height:400px;max-width:none!important;max-height:none!important;object-fit:contain;margin:0;}
+        .cover-subtitle {margin:0 auto 36px;font-size:.89em;}
+        .cover-meta {font-size:.71em;line-height:1.65;}
+        .reveal .question {font-size:.94em;margin-bottom:.55em;}
+        .reveal .project-title-clean {margin-bottom:14px;padding-bottom:10px;}
+        .reveal .columns {gap:30px;margin-top:8px;}
+        .reveal .flat-column {padding-top:11px;}
+        .reveal .flat-column p,.reveal .flat-column li {font-size:.70em;}
+        .reveal .evidence-line {margin-top:14px;padding-top:10px;font-size:.58em;}
+        .objectives {margin-top:13px;border-top:1px solid var(--linha);padding-top:10px;font-size:19px;line-height:1.25;}
+        .objectives p {margin:7px 0;}
+        .objectives h3 {font-size:21px;}
+        .reveal .method-lanes {margin-top:15px;gap:36px;}
+        .reveal .method-lane {padding-top:12px;}
+        .reveal .method-lane .corpus {font-size:1.26em;}
+        .reveal .control-line {margin-top:18px;padding-top:12px;}
+        .reveal .ask {margin-top:16px;font-size:.62em;}
+        .flow {display:flex;align-items:stretch;gap:10px;margin:18px 0;font-size:21px;line-height:1.25;}
+        .flow .step {flex:1;border-top:4px solid var(--azul);background:#eaf4f7;padding:13px 12px;}
+        .flow .arrow {align-self:center;color:var(--azul);font-weight:700;}
+        .flow .step small {display:block;color:var(--cinza);font-size:17px;margin-top:5px;}
+        .flow.compact {font-size:18px;margin:14px 0;}
+        .flow.compact .step {padding:10px;}
+        .reveal table {width:100%;font-size:21px;line-height:1.22;margin:14px 0;border-collapse:collapse;}
+        .reveal table th {background:#eaf4f7;color:var(--azul);border-bottom:2px solid var(--azul);padding:10px 12px;}
+        .reveal table td {padding:10px 12px;vertical-align:top;border-bottom:1px solid var(--linha);}
+        .reveal .dense table {font-size:19px;}
+        .reveal .dense table td,.reveal .dense table th {padding:8px 10px;}
+        .reveal .small-source {font-size:16px;color:var(--cinza);line-height:1.25;}
+        .reveal .statement {font-size:23px;padding:17px 22px;margin:14px 0 22px;}
+        .two {display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start;}
+        .two h3 {font-size:25px;}
+        .two p,.two li {font-size:22px;}
+        .reveal .status-columns li {font-size:22px;line-height:1.28;margin-bottom:10px;}
+        .reveal .status-columns h3 {font-size:25px;}
+        .reveal .criteria-columns table td:first-child,.reveal .criteria-columns table th:first-child {width:110px;white-space:nowrap;}
+        .reveal .criteria-columns col:first-child {width:24%!important;}
+        .reveal .criteria-columns col:last-child {width:76%!important;}
+        .reveal .metric-row {margin:16px 0 20px;}
+        .reveal .metric .value {font-size:1.45em;}
+        .reveal .metric .label {font-size:.61em;}
+        .reveal .timeline {grid-template-columns:160px 1fr 210px;row-gap:15px;column-gap:20px;margin-top:17px;}
+        .timeline .status {font-size:19px;color:var(--azul);padding-top:3px;}
+        .reveal .timeline .event {font-size:20px;}
+        .reveal .timeline .date {font-size:21px;}
+        .ref-grid {display:grid;grid-template-columns:1fr 1fr;gap:18px 36px;}
+        .ref {font-size:19px;line-height:1.3;border-top:1px solid var(--linha);padding-top:11px;}
+        .ref strong {font-size:20px;}
+        .reveal .footer {font-size:13px;}
+        @media print { .reveal .slides section {overflow:hidden!important;} }
+        .reveal .short-slide table { font-size: .80em; }
+        .reveal .short-slide .statement { font-size: .95em; }
+        .reveal .prisma-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+        .reveal .prisma-box { background:var(--azul-claro); border-left:5px solid var(--azul); border-radius:8px; padding:20px 24px; font-size:27px; }
+        .reveal .prisma-box strong { display:block; color:var(--azul); margin-bottom:9px; }
+        .reveal .prisma-box small { display:block; font-size:22px; margin-top:7px; }
+
+        /* Ajustes solicitados em 10/11: rodapé reservado, espaçamento e fluxograma. */
+        .reveal .slides section:not(.cover-slide) {padding-bottom:132px;}
+        .reveal .slides section:not(.cover-slide) > .evidence-line {
+          position:absolute; left:44px; right:262px; top:calc(100% - 98px);
+          margin:0; padding:8px 0 0; font-size:16px; line-height:1.22;
+          border-top:1px solid var(--linha); text-align:left; box-sizing:border-box;
+        }
+        .reveal .method-slide .method-lanes {margin:65px 0 70px;}
+        .reveal .method-slide .method-lane {padding-top:20px;}
+        .reveal .method-slide .flow {margin-top:54px;}
+        .reveal .biblio-slide .flow {margin:30px 0 38px;}
+        .reveal .biblio-slide table {margin:0 0 36px;}
+        .reveal .biblio-slide .metric-row {grid-template-columns:.8fr .8fr 1.6fr .95fr; gap:30px; align-items:start; margin:0;}
+        .reveal .biblio-slide .metric {min-height:200px;}
+        .reveal .year-chart {margin:0!important;}
+        .reveal .year-chart img {height:185px; width:100%; object-fit:contain; margin:0;}
+        .reveal .year-chart .label {margin-top:0;}
+        .reveal .ai-slide .statement {margin-bottom:28px;}
+        .reveal .ai-slide .flow {margin:0;}
+        .reveal .ai-cycle {position:relative;margin:24px 0 26px;padding-bottom:48px;}
+        .reveal .cycle-return {position:absolute;left:16.3%;right:16.3%;bottom:15px;height:34px;border:2px solid var(--azul);border-top:0;}
+        .reveal .cycle-return:before {content:"";position:absolute;top:-2px;left:-7px;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:9px solid var(--azul);}
+        .reveal .cycle-return-label {position:absolute;left:50%;bottom:1px;transform:translateX(-50%);width:760px;text-align:center;background:white;padding:0 12px;font-size:16px;line-height:1.2;color:var(--azul);}
+        .reveal .ai-slide .dense table td,.reveal .ai-slide .dense table th {padding:9px 12px;}
+        .reveal .ai-slide .discussion-box {margin-top:18px;}
+        .reveal .national-international {font-size:18px;line-height:1.3;margin:20px 0 16px;padding-top:12px;border-top:1px solid var(--linha);}
+        .reveal .criteria-slide .columns {margin-top:28px;gap:40px;}
+        .reveal .criteria-slide h3 {margin-bottom:24px;}
+        .reveal .criteria-slide table th {text-align:center!important;}
+        .reveal .criteria-slide table td:first-child {text-align:center;vertical-align:middle;}
+        .reveal .criteria-slide .dense table td,.reveal .criteria-slide .dense table th {padding:12px 10px;}
+        .reveal .triagem-slide table th {text-align:center!important;}
+        .reveal .triagem-slide table td:nth-child(n+2):nth-child(-n+5) {text-align:center!important;vertical-align:middle;}
+        .reveal .fulltext-slide .statement {margin-bottom:38px;}
+        .reveal .fulltext-slide .flow {margin:35px 0 40px;}
+        .reveal .fulltext-slide table td,.reveal .fulltext-slide table th {padding:15px 12px;}
+        .reveal .discussion-box {display:flex;gap:20px;align-items:center;border-left:5px solid #bd862c;background:#fff5e4;padding:13px 18px;margin:26px 0 0;font-size:18px;line-height:1.25;}
+        .reveal .discussion-box strong {flex:0 0 138px;color:#885b16;font-size:15px;letter-spacing:.025em;}
+        .reveal .matrix-slide table {font-size:19px;margin:26px 0;table-layout:fixed;}
+        .reveal .matrix-slide th {text-align:center;}
+        .reveal .matrix-slide td {vertical-align:middle;padding:13px 12px;}
+        .reveal .matrix-slide th:nth-child(1){width:19%;}.reveal .matrix-slide th:nth-child(2){width:25%;}
+        .reveal .matrix-slide th:nth-child(3){width:14%;}.reveal .matrix-slide th:nth-child(4){width:25%;}.reveal .matrix-slide th:nth-child(5){width:17%;}
+        .reveal .relation-scale {display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px;font-size:19px;}
+        .reveal .relation-scale div {border-top:3px solid var(--azul);padding-top:12px;}
+        .reveal .relation-scale small {display:block;color:var(--cinza);font-size:16px;margin-top:7px;}
+        .reveal .relation-state {font-size:18px;margin:23px 0 0;}
+        .reveal .schedule-slide table {table-layout:fixed;margin-top:48px;font-size:21px;}
+        .reveal .schedule-slide th:nth-child(1){width:210px;}.reveal .schedule-slide th:nth-child(2){width:980px;}.reveal .schedule-slide th:nth-child(3){width:250px;}
+        .reveal .schedule-slide col:nth-child(1){width:18%!important;}.reveal .schedule-slide col:nth-child(2){width:62%!important;}.reveal .schedule-slide col:nth-child(3){width:20%!important;}
+        .reveal .schedule-slide th,.reveal .schedule-slide td {vertical-align:middle;padding:25px 16px;white-space:nowrap;}
+        .reveal .schedule-slide th {text-align:center;}
+        .reveal .schedule-slide td:last-child {text-align:center;}
+        .reveal .references-combined .reference-block {margin:10px 0 0;border-top:2px solid var(--azul);padding-top:6px;}
+        .reveal .references-combined .reference-block h3 {font-size:21px;margin:0 0 5px;}
+        .reveal .references-combined .reference-text {font-size:16px;line-height:1.18;text-align:left;}
+        .reveal .references-combined .ref {display:block;font-size:inherit;line-height:1.18;margin:0 0 2px;padding:0;border:0;background:none;}
+        .reveal .references-combined .ref strong {font-size:inherit;}
+        .reveal .references-combined .ref + .ref::before {content:none;}
+
+        .prisma-flow {position:relative;width:100%;height:618px;margin-top:22px;color:#17323f;font-family:Inter,"Segoe UI",sans-serif;}
+        .prisma-flow .phase {position:absolute;left:0;width:126px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;text-align:center;border-left:5px solid #006a92;background:#edf4f7;color:#006a92;font-size:17px;font-weight:700;padding:8px;}
+        .prisma-flow .node {position:absolute;box-sizing:border-box;min-height:74px;padding:11px 17px;border:1px solid #bfd3db;border-top:4px solid #006a92;background:#eaf4f7;border-radius:5px;text-align:center;display:flex;flex-direction:column;justify-content:center;line-height:1.16;font-size:22px;}
+        .prisma-flow .node strong {font-size:23px;color:#006a92;display:block;}.prisma-flow .node small {font-size:19px;color:#56656d;display:block;margin-top:5px;}
+        .prisma-flow .main-node {left:155px;width:630px;height:74px;}.prisma-flow .side-node {left:900px;width:500px;height:74px;}
+        .prisma-flow .pending {background:#fff6e8;border-color:#d8b775;border-top-color:#b5822b;}.prisma-flow .pending strong {color:#885b16;}
+        .prisma-flow .future {background:#f7f9fa;border-style:dashed;}.prisma-flow .connector {position:absolute;background:#006a92;}
+        .prisma-flow .down {left:469px;width:2px;height:32px;}.prisma-flow .down:after {content:"";position:absolute;left:-5px;bottom:-1px;border-left:6px solid transparent;border-right:6px solid transparent;border-top:8px solid #006a92;}
+        .prisma-flow .right {left:785px;width:112px;height:2px;}.prisma-flow .right:after {content:"";position:absolute;right:-2px;top:-5px;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:8px solid #006a92;}
+        .prisma-flow .support {background:transparent;border-top:2px dashed #9c834d;}
+        
+        .reveal .slides section.rsl-novos-dados table { width: 100%; font-size: 24px; margin-top: 35px; }
+        .reveal .slides section.rsl-novos-dados table th, .reveal .slides section.rsl-novos-dados table td { padding: .48em .6em; white-space: normal; }
+        .reveal .slides section.rsl-distribuicao table th,.reveal .slides section.rsl-distribuicao table td { padding: 8px 14px; }
+        .reveal .slides section.rsl-distribuicao table th:first-child { width: 37%; }
+        .reveal .slides section.rsl-distribuicao table th:last-child { width: 16%; }
+        .reveal .slides section.conclusao-integrada .statement { margin: 18px 0 13px; font-size: 23px; line-height: 1.24; }
+        .reveal .slides section.conclusao-integrada table { margin: 14px 0 16px; font-size: 23px; }
+        .reveal .slides section.conclusao-integrada th:first-child { width: 31%; }
+        .reveal .slides section.conclusao-integrada .discussion-box { margin-top: 14px; }
+        .reveal .slides section.triagem-central > table { position:absolute; top:50%; transform:translateY(-50%); width:90%; left:5%; font-size:25px; }
+        .reveal .slides section.triagem-central table th,.reveal .slides section.triagem-central table td { padding:15px 8px; text-align:center; }
+        .reveal .slides section.triagem-central table th:first-child {width:28%; text-align:left;}
+        .reveal .slides section.triagem-central table td:first-child {text-align:left;}
+        .reveal .slides section.selecao-larguras th:first-child {width:22%;}
+        .reveal .slides section.selecao-larguras th:nth-child(2) {width:64%;}
+        .reveal .slides section.selecao-larguras td:last-child,.reveal .slides section.selecao-larguras th:last-child {text-align:center;}
+        .reveal .slides section.rsl-distribuicao table th:first-child {width:31%;}
+        .reveal .slides section.rsl-distribuicao table th:last-child {width:13%;}
+        .reveal .slides section.rsl-distribuicao table th:not(:first-child),.reveal .slides section.rsl-distribuicao table td:not(:first-child) {text-align:center;}
+        .reveal .slides section.resultados-por-questao > table {position:absolute; top:46%; transform:translateY(-50%); width:90%; left:5%;}
+        .reveal .slides section.resultados-por-questao th:first-child {width:24%;}
+        .reveal .slides section.resultados-por-questao td,.reveal .slides section.resultados-por-questao th {padding:16px 13px;vertical-align:middle;}
+        .reveal .slides section.limitacoes-separadas table {width:100%; margin-top:38px;font-size:23px;}
+        .reveal .slides section.limitacoes-separadas td,.reveal .slides section.limitacoes-separadas th {padding:15px; vertical-align:middle;}
+        .reveal .slides section.exemplo-integral .flow.compact { margin:8px 0 4px; }
+        .reveal .slides section.exemplo-integral .flow.compact .step {padding: 3px 8px; min-height:0; font-size:13px;}
+        .reveal .slides section.exemplo-integral .flow.compact .step small {font-size:11px;}
+        .reveal .slides section.exemplo-integral table { width:100%; margin-top:5px; font-size:12px; line-height:1.09; table-layout:fixed;}
+        .reveal .slides section.exemplo-integral th,.reveal .slides section.exemplo-integral td { font-size:12px !important; line-height:1.06 !important; padding:0px 4px !important; overflow-wrap:anywhere; vertical-align:middle;}
+        .reveal .slides section.exemplo-integral th:nth-child(1) {width:18%;}
+        .reveal .slides section.exemplo-integral th:nth-child(2) {width:17%;}
+        .reveal .slides section.exemplo-integral th:nth-child(3) {width:65%;}
+        .reveal .slides section.exemplo-integral th:nth-child(4) {width:24%;}
+        .reveal .slides section.exemplo-integral th:nth-child(5) {width:6%;}
+        .reveal .slides section.exemplo-integral th:nth-child(6) {width:8%;}
+        .reveal .slides section.exemplo-integral .evidence-line {font-size:14px;}
+        .reveal .slides section.exemplo-integral table { width:100%; margin-top:5px; table-layout:fixed; }
+        .reveal .slides section.exemplo-integral table th,.reveal .slides section.exemplo-integral table td { font-size:9px !important; line-height:1.03 !important; padding:0px 3px !important; overflow-wrap:anywhere; vertical-align:middle; }
+        .reveal .slides section.exemplo-integral table th:nth-child(1) { width:12%; }
+        .reveal .slides section.exemplo-integral table th:nth-child(2) { width:13%; }
+        .reveal .slides section.exemplo-integral table th:nth-child(3) { width:37%; }
+        .reveal .slides section.exemplo-integral table th:nth-child(4) { width:27%; }
+        .reveal .slides section.exemplo-integral table th:nth-child(5) { width:4%; }
+        .reveal .slides section.exemplo-integral table th:nth-child(6) { width:7%; }
+        </style>
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+## Recuperação contextual da memória organizacional com IAG e RAG {.cover-slide}
+
+<div class="cover-subtitle">Bibliometria e revisão sistemática em processos administrativos e educacionais</div>
+<div class="cover-meta"><strong>{{< var artigo.autores >}}</strong><br>Mestrado Profissional em Gestão e Tecnologia de Sistemas Produtivos<br>Gestão da Tecnologia e Sistemas de Informação<br><br><strong>Apresentação final · 24 de novembro de 2026</strong></div>
+
+
+## O projeto
+
+<div class="project-title-clean">
+<span class="label">Título provisório</span>
+<strong>{{< var artigo.titulo >}}</strong>
+</div>
+
+<div class="kicker">Questão central</div>
+
+<div class="question">
+Quais benefícios, limitações, riscos e requisitos de governança a literatura identifica no uso da IAG apoiada por RAG como complemento aos sistemas de informação para recuperar a memória organizacional e apoiar decisões administrativas?
+</div>
+
+:::: {.columns}
+::: {.column width="50%"}
+<div class="flat-column">
+<h3>Proposição orientadora</h3>
+<p>{{< var artigo.proposicao_resumida >}}</p>
+</div>
+:::
+
+::: {.column width="50%"}
+<div class="flat-column">
+<h3>Objetivo</h3>
+<p>Analisar a produção recuperada e sintetizar aplicações, benefícios, limitações, riscos e requisitos de governança, com atenção ao contexto educacional.</p>
+</div>
+:::
+::::
+
+<div class="evidence-line">
+OE1 e QS1: bibliometria · OE2–OE3 e QS2–QS4: revisão sistemática
+</div>
+
+<div class="objectives">
+<h3>Objetivos específicos</h3>
+<p><strong>OE1.</strong> {{< var artigo.objetivos_especificos.oe1 >}}</p>
+<p><strong>OE2.</strong> {{< var artigo.objetivos_especificos.oe2 >}}</p>
+<p><strong>OE3.</strong> {{< var artigo.objetivos_especificos.oe3 >}}</p>
+</div>
+
+
+## Fundamentação
+
+<div class="statement">
+A memória organizacional depende do que a organização consegue <strong>reter, atualizar, localizar, interpretar e reutilizar</strong>, e não apenas do que foi armazenado.
+</div>
+
+:::: {.columns}
+::: {.column width="48%"}
+<div class="flat-column">
+<h3>Linha conceitual</h3>
+
+::: {.compact-list}
+
+- **@alavi2001knowledge**: sistemas e processos de gestão do conhecimento.
+- **@jennex2003organizational**: recuperação e uso da memória organizacional.
+- **@barros2015information**: memória distribuída entre sistemas, documentos e atores.
+- **@antunes2020linking**: aprendizagem como processo e memória como retenção.
+- **@versiani2024volatile**: memória volátil quando o conhecimento permanece dependente de especialistas.
+
+:::
+
+</div>
+:::
+
+::: {.column width="52%"}
+<div class="flat-column">
+<h3>Problema observado em uma organização</h3>
+<p>Em um repositório industrial de lições aprendidas, a busca lexical dificultava o reaproveitamento das experiências. Um protótipo RAG melhorou a relevância e a ordenação dos resultados, mas continuou dependente da qualidade da documentação de origem.</p>
+
+::: {.small-source}
+@rasmussen2026lessons
+:::
+
+<p><strong>Situação ilustrativa do projeto:</strong> planejamento orçamentário de uma rede educacional com fontes, versões e premissas distribuídas.</p>
+</div>
+:::
+::::
+
+## Metodologia {.short-slide .method-slide}
+
+Pesquisa bibliográfica aplicada, exploratória e descritiva, com abordagem quantitativa e qualitativa.
+
+<div class="method-lanes">
+<div class="method-lane"><h3>Bibliometria · QS1</h3><div class="corpus">53 documentos</div><p>Estrutura e distribuição temporal do corpus recuperado.</p></div>
+<div class="method-lane"><h3>RSL · QS2–QS4</h3><div class="corpus">33 publicações</div><p>Aplicações, resultados, limites e governança.</p></div>
+</div>
+
+<div class="flow compact"><div class="step">Busca<small>75 → 53</small></div><div class="arrow">→</div><div class="step">Bibliometria<small>Concluída</small></div><div class="arrow">→</div><div class="step">Triagem<small>Concluída</small></div><div class="arrow">→</div><div class="step">Textos completos<small>39 fontes consultadas</small></div><div class="arrow">→</div><div class="step">Qualidade e extração</div><div class="arrow">→</div><div class="step">Síntese</div></div>
+
+<div class="evidence-line">IA apoia tradução, parecer e organização; eu confiro as evidências e decido. Não substitui um segundo pesquisador humano. PRISMA orienta o relato. [@page2021prisma; @flemyng2025position]</div>
+
+## Bibliometria {.short-slide .biblio-slide}
+
+<div class="flow"><div class="step">Pilotos P0–P8<small>Refinamento da estratégia</small></div><div class="arrow">→</div><div class="step">Busca · 19/09<small>Scopus 50 · WoS 25 · SciELO 0</small></div><div class="arrow">→</div><div class="step">Consolidação<small>− 1 de 2027 − 21 duplicatas</small></div><div class="arrow">→</div><div class="step">53 documentos<small>Resultados preservados</small></div></div>
+
+| Bloco de busca | Função |
+|---|---|
+| RAG por extenso | Delimitar a tecnologia |
+| Memória / conhecimento / informação | Delimitar o conteúdo recuperado |
+| Contexto organizacional | Aproximar a aplicação institucional |
+
+<div class="metric-row"><div class="metric"><div class="value">47</div><div class="label">fontes</div></div><div class="metric"><div class="value">194</div><div class="label">autores únicos</div></div><div class="metric year-chart"><img src="figuras/publicacoes_ano_status_20261110.svg" alt="Documentos por ano: 2024, 3; 2025, 12; 2026 parcial, 38"><div class="label">Documentos por ano</div></div><div class="metric"><div class="value">35 / 53</div><div class="label">família gestão do conhecimento</div></div></div>
+
+<div class="evidence-line">*2026 parcial, corte em 19/09. Famílias não exclusivas. Valores descrevem este corpus; não demonstram crescimento do campo ou eficácia das aplicações. [@donthu2021bibliometric]</div>
+
+## Revisão Sistemática da Literatura — apoio da IA {.ai-slide}
+
+<div class="statement"><strong>Condução individual com responsabilidade humana.</strong> Human-in-the-loop: eu leio, confiro as evidências, corrijo interpretações e decido. A IA apoia a compreensão e a organização; não é segundo pesquisador.</div>
+
+<div class="ai-cycle">
+<div class="flow">
+<div class="step">1 · Saída original da IA<small>Original + tradução; parecer, critérios, evidências e incertezas</small></div><div class="arrow">→</div>
+<div class="step">2 · Minha avaliação<small>Após exposição à IA; conferência, ressalvas e correções</small></div><div class="arrow">→</div>
+<div class="step">3 · Minha decisão e registro<small>Eu decido e confiro; IA transcreve e tabula</small></div>
+</div>
+<div class="cycle-return"></div><div class="cycle-return-label">Dúvidas e correções retornam à IA; eu reconfiro antes de concluir o registro.</div>
+</div>
+
+::: {.dense}
+| Fundamentação | Aplicação e limite |
+|---|---|
+| @flemyng2025position | Responsabilidade, supervisão humana, transparência e teste no contexto de uso. |
+| @gartlehner2025responsible | Verificar saídas; fonte sobre revisões rápidas, sem converter esta RSL em revisão rápida. |
+| @motzfeldtjensen2025chatgpt; @wang2025humanai | Estudos em tarefas/domínios específicos; não comprovam desempenho equivalente neste corpus. |
+:::
+
+<div class="national-international">
+  <strong>Nacional:</strong> CNPq (2026), art. 9º: declaração de ferramenta/finalidade e responsabilidade pelo conteúdo.
+  <br>
+  <strong>Internacional:</strong> NIST (2023), AI RMF 1.0: gestão documentada dos riscos. Referências de apoio conforme seus escopos, sem certificação de conformidade.
+</div>
+
+
+<div class="evidence-line">Fluxo efetivamente aplicado: IA primeiro → avaliação humana após exposição → decisão humana. Três registros, um pesquisador; sem independência ou cegamento. Concordância não é prova de acurácia. Prompts, versões, evidências e correções são preservados.</div>
+
+
+## Revisão Sistemática da Literatura — critérios {.criteria-slide}
+
+:::: {.columns .status-columns .criteria-columns}
+::: {.column width="50%"}
+
+### Inclusão — critérios existentes
+
+::: {.dense}
+| Código | O que verificar |
+|---|---|
+| CI-01 | RAG ou mecanismo funcionalmente compatível. |
+| CI-02 | Recuperação de conteúdo externo aos parâmetros do gerador, para contextualizar a geração. |
+| CI-03 | Contexto organizacional, institucional ou administrativo. |
+| CI-04 | Relação funcional com informação, conhecimento ou memória organizacional. |
+| CI-05 | Contribuição substantiva a pelo menos uma de QS2, QS3 ou QS4. |
+| CI-06–09 | Artigo; sem restrição de idioma; antes de 2027; informações disponíveis. |
+:::
+
+:::
+::: {.column width="50%"}
+
+### Exclusão — critérios e motivos
+
+::: {.dense}
+| CE / EX | Ausência ou condição verificável |
+|---|---|
+| CE-01 / EX01–02 | Sem RAG compatível; sigla com outro sentido. |
+| CE-02 / EX03 | Sem recuperação de fontes pertinente à geração. |
+| CE-03 / EX04 | Sem contexto organizacional relevante. |
+| EX05 / CI-04 | Sem vínculo funcional com informação/conhecimento organizacional. |
+| CE-04 / EX06 | Aplicação exclusivamente pedagógica. |
+| CE-05 / EX07 | Sem relação substantiva com o escopo da pesquisa. |
+| CE-07 / EX10 | Texto completo não recuperado após tentativas. |
+| CE-06, 08 e 09 | Tipo não elegível, redundância ou informação insuficiente. |
+:::
+
+:::
+::::
+
+<div class="discussion-box"><strong>O QUE CONTA COMO FONTE</strong><span>Um repositório interno ou privado pode fornecer conteúdo externo aos parâmetros do modelo. O ajuste fino isolado não atende a CI-02.</span></div>
+
+<div class="evidence-line"><strong>CI</strong> = critério de inclusão. <strong>CE</strong> = critério de exclusão. <strong>EX</strong> = código do motivo registrado. Exemplo: CE-07 define a condição; EX10 registra o motivo no fluxo. EX09 é o código do filtro de período. Ausência no resumo não demonstra ausência no texto.</div>
+
+
+## Revisão Sistemática da Literatura — calibração e triagem {.triagem-slide .triagem-central}
+
+| Rodada | Registros com decisão | Avançar | Excluir | Dúvida | Situação |
+|---|---:|---:|---:|---:|---|
+| Calibração | 10 | 6 | 2 | 2 | ✅ Concluída |
+| Triagem — demais registros | 43 | 29 | 6 | 8 | ✅ Concluída |
+| Total, sem duplicar a calibração | **53** | **35** | **8** | **10** | **45 candidatos ao integral** |
+
+## Revisão Sistemática da Literatura — matriz de análise {.short-slide .matrix-slide}
+
+| Bloco | Foco da análise | Relação temática | Justificativa | Localização da evidência |
+|---|---|---|---|---|
+| Identidade e método | Contexto, desenho, amostra e comparação | Não se aplica | Caracterização do estudo | Página / seção |
+| Aplicação e tecnologia | Processo, fontes, RAG e integração | Nível registrado por bloco | Como contribui para QS2 | Trecho e página |
+| Resultados | Benefícios, medidas e limitações | Nível registrado por bloco | O que sustenta para QS3 | Página / tabela |
+| Limites e governança | Riscos, validação e responsabilidades | Nível registrado por bloco | Contribuição a QS3–QS4 | Página / seção |
+| Relação com a pesquisa | QS2–QS4 e transferência educacional | Nível registrado por bloco | Vínculo e limite da contribuição | Trecho e página |
+| Evidência e conferência | Fonte e verificação humana | Não se aplica | Rastreabilidade do registro | Página / seção |
+
+<div class="relation-scale"><div><strong>Não identificada</strong><small>Evidência não localizada no texto</small></div><div><strong>Baixa</strong><small>Menção periférica</small></div><div><strong>Moderada</strong><small>Contribuição explícita e secundária</small></div><div><strong>Alta</strong><small>Tema central desenvolvido</small></div></div>
+
+<p class="relation-state"><strong>Matriz consolidada:</strong> 900 linhas, 330 julgamentos qualitativos e 297 classificações temáticas. Foram incorporadas 31 linhas adicionais.</p>
+
+<div class="evidence-line">Relação temática não é qualidade metodológica, escore ou corte de inclusão. Não identificada não comprova inexistência. Elegibilidade e conferência humanas permanecem individuais. [@kitchenham2007guidelines; @page2021prisma]</div>
+
+## Revisão Sistemática da Literatura — avaliação e matriz preenchida {.short-slide .rsl-novos-dados .exemplo-integral}
+
+<div class="flow compact"><div class="step">Original conferido<small>Identidade e versão</small></div><div class="arrow">→</div><div class="step">IA: tradução e parecer<small>Tradução focal e parecer</small></div><div class="arrow">→</div><div class="step">IA: leitura guiada<small>Evidências, limites e pontos de conferência</small></div><div class="arrow">→</div><div class="step">Eu: conferência e decisão<small>Elegibilidade encerrada</small></div><div class="arrow">→</div><div class="step">Tabulação conferida<small>Após elegibilidade</small></div></div>
+
+| bloco | campo | valor | pagina_secao_tabela | qs_relacionada | relacao_tematica |
+|:---|:---|:---|:---|:---:|:---:|
+| A — Controle | id_registro_origem | DOC_0002 | p. PDF 1; controle de candidatos | Não se aplica | Não se aplica |
+| A — Controle | status_extracao | Em andamento; elegibilidade humana Incluir; conferência de campos/qualidade pendente | p. PDF 1; controle de candidatos | Não se aplica | Não se aplica |
+| B — Identificação bibliográfica | titulo | Transforming public administration workflows with multi-agent AI: A human-in-the-loop knowledge orchestration framework | p. PDF 1; controle de candidatos | Não se aplica | Não se aplica |
+| B — Identificação bibliográfica | doi | 10.1016/j.chbr.2026.101253 | p. PDF 1; controle de candidatos | Não se aplica | Não se aplica |
+| C — Caracterização metodológica | desenho | Implantação naturalística em uma administração; observação e entrevistas; sem controle aleatorizado | p. PDF 7; §5.2; E4; conferir também as páginas no guia | QS3 | Não se aplica |
+| C — Caracterização metodológica | amostra | 30 usuários ativos; 112 solicitações; uma instituição; subconjunto de entrevistados não quantificado | §5.1 e Tabela3, PDFp.7:30usuários/112solicitações; entrevistas §5.2, pp.7–8 | QS3 | Não se aplica |
+| C — Caracterização metodológica | periodo_estudo | Seis meses; datas exatas da operação não confirmadas nesta rodada | Tabela3 e §5.1, PDFp.7 | QS3 | Não se aplica |
+| D — Contexto organizacional | setor | Administração pública regional; Província Autônoma de Trento, Itália | p. PDF 5; §3.2; E1; conferir também as páginas no guia \| Relação temática: §5.1 e Tabela 3, p. 7 | QS2 | Alta |
+| D — Contexto organizacional | processo | Preparação de respostas a solicitações do conselho e coordenação de competências | p. PDF 5; §3.2; E1; conferir também as páginas no guia \| Relação temática: §5.1 e Tabela 3, p. 7 | QS2 | Alta |
+| E — Tecnologia e arquitetura | arquitetura_rag | CARE: orquestração LangGraph com agentes especializados, recuperação híbrida e revisão delimitada | p. PDF 5; §3.3; E2; conferir também as páginas no guia \| Relação temática: §3.1–3.5, pp. 4–5; §4, pp. 5–7; §6.3, p. 10 | QS2 | Alta |
+| E — Tecnologia e arquitetura | tipo_recuperacao | Densa e esparsa, fusão e filtro de pertinência por LLM (§3.3) | p. PDF 5; §3.3; E2; conferir também as páginas no guia \| Relação temática: §3.1–3.5, pp. 4–5; §4, pp. 5–7; §6.3, p. 10 | QS2 | Alta |
+| E — Tecnologia e arquitetura | modelo | GPT-4o segundo Apêndice A.10; checkpoint não informado | p. PDF 11; Ethics declaration; E6; conferir também as páginas no guia \| Relação temática: §3.1–3.5, pp. 4–5; §4, pp. 5–7; §6.3, p. 10 | QS2 | Alta |
+| F — Sistemas e fontes organizacionais | fontes_recuperadas | Mais de 160 mil documentos administrativos e respostas anteriores; fontes internas/oficiais | p. PDF 5; §3.2; E1; conferir também as páginas no guia \| Relação temática: §3.2, pp. 4–5 | QS2 | Alta |
+| F — Sistemas e fontes organizacionais | memoria_organizacional | Função explícita do acervo institucional na preparação de respostas | p. PDF 5; §3.2; E1; conferir também as páginas no guia \| Relação temática: §3.2, pp. 4–5 | QS2 | Alta |
+| G — Aplicação e complementaridade | forma_complementaridade | Recuperar, sintetizar e redigir minuta mantendo revisão e aprovação administrativas | p. PDF 7; §5.1; E3; conferir também as páginas no guia | QS2 | Alta |
+| H — Benefícios e resultados | resultado_quantitativo | Aproximadamente 70% de redução de tempo: estimativa agregada por autoavaliação | p. PDF 7; §5.2; E4; conferir também as páginas no guia \| Relação temática: Tabela 3 e §5.2, p. 7; §6.3, p. 10 | QS3 | Alta |
+| H — Benefícios e resultados | forca_afirmacao | Relato de implantação e percepção; não demonstra efeito causal ou ganho reproduzível | p. PDF 7; §5.2; E4; conferir também as páginas no guia \| Relação temática: Tabela 3 e §5.2, p. 7; §6.3, p. 10 | QS3 | Alta |
+| I — Limitações e riscos | limitacao_metodologica | Sem controle, cronometragem uniforme ou taxas sistemáticas de alucinação/citação | p. PDF 8; §5.3; E5; conferir também as páginas no guia \| Relação temática: §6.3–6.5, p. 10 | QS3 | Moderada |
+| I — Limitações e riscos | risco | Afirmações incorretas podem sobreviver à recuperação; responsabilidade não delegável | p. PDF 8; §5.3; E5; conferir também as páginas no guia \| Relação temática: §6.3–6.5, p. 10 | QS3; QS4 | Moderada |
+| J — Governança | validacao_humana | Revisão documental e assinatura administrativa obrigatórias antes da liberação | p. PDF 7; §5.1; E3; conferir também as páginas no guia | QS4 | Alta |
+| J — Governança | rastreabilidade | Referências e artefatos intermediários descritos; eficácia isolada não mensurada | p. PDF 8; §5.3; E5; conferir também as páginas no guia \| Relação temática: p. PDF 7; §5.1; E3; conferir também as páginas no guia | QS4 | Alta |
+| K — Contexto educacional | aplicacao_direta | Não há aplicação educacional testada | p. PDF 10; §6.4; E7; conferir também as páginas no guia \| Relação temática: §5.1 e Tabela 3, p. 7 | QS4 | Não identificada |
+| K — Contexto educacional | restricao_transferencia | Requer acervo, competências, modelos de resposta e cadeia de validação locais | p. PDF 10; §6.4; E7; conferir também as páginas no guia \| Relação temática: §5.1 e Tabela 3, p. 7 | QS4 | Não identificada |
+| L — Lacunas e agenda | pesquisa_futura | Benchmark de recuperação, registro de erros e validação em outros contextos | p. PDF 5; §3.3; E2; conferir também as páginas no guia | QS4 | Moderada |
+| M — Qualidade | clareza_objetivo | Suficiente — Objetivo de apoiar respostas a solicitações administrativas é delimitado e vinculado ao CARE. | §1, pp. 1–2; §3.1, p. 4 | QS3 | Não se aplica |
+| M — Qualidade | adequacao_metodo | Parcial — Implantação naturalística é pertinente à descrição de uso e percepções; sem controle ou cronometragem não permite atribuição causal de produtividade. | §5.1–5.2, p. 7; §6.3, p. 10 | QS3 | Não se aplica |
+| M — Qualidade | descricao_contexto | Suficiente — Uma administração de Trento, seis meses, 30 usuários e 112 solicitações estão identificados. São unidades diferentes. | §5.1 e Tabela 3, p. 7 | QS3 | Não se aplica |
+| M — Qualidade | descricao_tecnologia | Parcial — Fluxo, recuperação híbrida e validação são descritos. Modelos de serviço, prompts ajustados e mudanças de versão limitam reprodutibilidade completa. Não usar o resultado de 70% como localizador da arquitetura. | §3.1–3.5, pp. 4–5; §4, pp. 5–7; §6.3, p. 10 | QS3 | Não se aplica |
+| M — Qualidade | descricao_fontes | Suficiente — Categorias, quantidades aproximadas, origem em bases/repositórios oficiais e atualização incremental são descritas; acesso restrito não equivale a ausência de identificação das fontes. | §3.2, pp. 4–5 | QS3 | Não se aplica |
+| M — Qualidade | transparencia_procedimentos | Parcial — Há detalhes de prompts/algoritmos, mas entrevistas, baseline, seleção dos participantes e registro de tempos não permitem reprodução integral. Conferir também declaração ética, sem inferir irregularidade. | §5.2, p. 7; apêndices A.1–A.5, pp. 11–12; §6.3, p. 10 | QS3 | Não se aplica |
+| M — Qualidade | adequacao_avaliacao | Parcial — Avaliação descritiva e institucional é pertinente à viabilidade, mas não testa causalmente eficiência, eficácia da supervisão ou qualidade factual com métricas independentes. | §5.2–5.3, pp. 7–8; §6.3, p. 10 | QS3 | Não se aplica |
+| M — Qualidade | sustentacao_resultados | Parcial — 70% é estimativa autorrelatada frente a baseline interno; implantação não demonstra por si só redução mensurada de erros. | Tabela 3 e §5.2, p. 7; §6.3, p. 10 | QS3 | Não se aplica |
+| M — Qualidade | limitacoes_discutidas | Suficiente — Os autores explicitam ausência de controle, mensuração instrumental e métricas de recuperação/erros, além de instituição única e limites de transferência. | §6.3–6.5, p. 10 | QS3 | Não se aplica |
+| M — Qualidade | rastreabilidade_evidencias | Parcial — Fontes das respostas são apresentadas, mas isso não equivale à rastreabilidade empírica dos resultados. Faltam registros sistemáticos de erros e detalhamento dos relatos. | §3.5, p. 5; §5.2–5.3, pp. 7–8; §6.3, p. 10 | QS3 | Não se aplica |
+
+<div class="evidence-line">DOC_0002 · 34 campos registrados nos 13 blocos A–M. O valor de status_extracao preserva a anotação da etapa de extração. A revisão e a síntese foram encerradas em 22/11.</div>
+
+## Revisão Sistemática da Literatura — fluxo PRISMA {.short-slide .prisma-slide}
+
+<div class="prisma-flow" role="img" aria-label="Fluxo PRISMA final: identificação, triagem, recuperação, elegibilidade e inclusão">
+<div class="phase" style="top:0;height:74px">Identificação</div>
+<div class="phase" style="top:108px;height:74px">Triagem</div>
+<div class="phase" style="top:216px;height:182px">Recuperação</div>
+<div class="phase" style="top:432px;height:74px">Elegibilidade</div>
+<div class="phase" style="top:540px;height:74px">Inclusão</div>
+<div class="node main-node" style="top:0"><strong>Registros identificados: 75</strong><small>Scopus 50 · WoS 25 · SciELO 0</small></div>
+<div class="connector right" style="top:37px"></div><div class="node side-node" style="top:0"><strong>Removidos antes da triagem: 22</strong><small>21 duplicatas + 1 registro de 2027</small></div>
+<div class="connector down" style="top:74px"></div>
+<div class="node main-node" style="top:108px"><strong>Registros triados: 53</strong></div>
+<div class="connector right" style="top:145px"></div><div class="node side-node" style="top:108px"><strong>Excluídos por título e resumo: 8</strong></div>
+<div class="connector down" style="top:182px"></div>
+<div class="node main-node" style="top:216px"><strong>Candidatos à recuperação: 45</strong></div>
+<div class="connector right" style="top:253px"></div><div class="node side-node pending" style="top:216px"><strong>Textos não recuperados: 6</strong><small>EX10 · sem avaliação por conteúdo</small></div>
+<div class="connector down" style="top:290px"></div>
+<div class="node main-node" style="top:324px"><strong>Fontes textuais consultadas: 39</strong></div>
+
+<div class="connector down" style="top:398px"></div>
+<div class="node main-node future" style="top:432px"><strong>Elegibilidade concluída</strong><small>Sem decisões pendentes</small></div>
+<div class="connector right" style="top:469px"></div><div class="node side-node future" style="top:432px"><strong>Excluídos por conteúdo: 6</strong><small>3 EX04 · 3 EX05 como motivos principais</small></div>
+<div class="connector down" style="top:506px"></div>
+<div class="node main-node future" style="top:540px"><strong>Publicações incluídas: 33</strong></div>
+</div>
+
+<div class="evidence-line">Fluxo consolidado em 22/11. Fontes consultadas incluem conferências focais e indiretas. O fluxo distingue não recuperação de exclusão por conteúdo. [@page2021prisma]</div>
+
+## RSL — como os critérios se refletem na seleção {.short-slide .rsl-novos-dados .selecao-larguras}
+
+| Etapa | Regra aplicada | Publicações |
+| :--- | :--- | :---: |
+| Elegibilidade | Inclusão após aplicar CI-01 a CI-04 e contribuição a pelo menos uma de QS2, QS3 ou QS4 (CI-05). | 33 |
+| Exclusão por conteúdo | EX04 principal · ausência de contexto organizacional pertinente (CI-03). | 3 |
+| Exclusão por conteúdo | EX05 principal · ausência de vínculo funcional com informação ou conhecimento organizacional (CI-04). | 3 |
+| Recuperação | EX10 · texto da publicação selecionada não recuperado após tentativas documentadas. | 6 |
+
+<div class="evidence-line">Base: 45 textos buscados. Os seis excluídos por conteúdo também receberam o outro código como complementar. Cada publicação aparece uma vez pelo motivo principal.</div>
+
+## RSL — distribuição das classificações temáticas {.short-slide .rsl-novos-dados .rsl-distribuicao}
+
+| Bloco da matriz | Questão | Alta | Moderada | Baixa | Não identificada | Exemplo |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| D · Contexto organizacional | QS2 | 28 | 5 | 0 | 0 | DOC_0002 |
+| E · Tecnologia e arquitetura | QS2 | 28 | 5 | 0 | 0 | DOC_0028 |
+| F · Sistemas e fontes | QS2 | 26 | 7 | 0 | 0 | DOC_0044 |
+| G · Aplicação e integração | QS2 | 23 | 10 | 0 | 0 | DOC_0002 |
+| H · Benefícios e resultados | QS3 | 30 | 3 | 0 | 0 | DOC_0017 |
+| I · Limitações e riscos | QS3–QS4 | 6 | 27 | 0 | 0 | DOC_0017 |
+| J · Governança | QS4 | 10 | 21 | 2 | 0 | DOC_0044 |
+| K · Contexto educacional | QS4 | 5 | 0 | 1 | 27 | DOC_0023 |
+| L · Lacunas e agenda | QS4 | 0 | 32 | 1 | 0 | DOC_0028 (M) |
+| **Total** | | **156** | **110** | **4** | **27** | |
+
+<div class="evidence-line"><strong>Por que começa em D?</strong> A registra o controle do estudo, B a identificação bibliográfica e C a caracterização metodológica. A intensidade temática aplica-se aos blocos D–L. São 33 publicações por bloco. Exemplos com relação alta, exceto L (M = moderada).</div>
+
+## Revisão Sistemática da Literatura — resultados por questão {.short-slide .rsl-novos-dados .resultados-por-questao}
+
+| Questão | O que a síntese mostra | Limite da evidência |
+|:---|:---|:---|
+| QS2 · Aplicações | Recuperação contextual, consultas, minutas e reúso de fontes existentes | Viabilidade depende da qualidade das fontes e da integração à rotina |
+| QS3 · Benefícios e riscos | Ganhos em tarefas e configurações específicas, com métricas distintas | Autorrelato, percepção, qualidade da tarefa e desempenho técnico têm alcances diferentes |
+| QS4 · Governança e educação | Documentação, curadoria, rastreabilidade e revisão humana. Cinco publicações com contexto educacional direto | Transferência para a administração educacional requer avaliação situada |
+
+<div class="evidence-line">As 33 publicações incluem estudos primários e secundários. Ganhos técnicos locais não estabelecem aumento geral de produtividade ou melhoria da qualidade decisória.</div>
+
+## Alternativas e complementaridades ao RAG {.short-slide .rsl-novos-dados}
+
+| Estratégia | Como pode combinar com RAG | O que foi avaliado |
+|:---|:---|:---|
+| [RAFT · ajuste fino com recuperação](https://arxiv.org/abs/2403.10131v2) | Treina o modelo a usar documentos relevantes e desconsiderar distratores. | Respostas a perguntas em tarefas de domínio. |
+| [Contexto longo e Self-Route](https://aclanthology.org/2024.emnlp-industry.66/) | Alterna entre recuperação e envio direto de contextos mais amplos. | Desempenho e custo em tarefas e modelos específicos. |
+| [Search-R1 · busca iterativa](https://arxiv.org/abs/2503.09516v5) | Treina o modelo a formular consultas e usar os resultados em etapas sucessivas. | Aprendizagem por reforço avaliada em conjuntos de perguntas e respostas. |
+
+<div class="discussion-box"><strong>PARA PESQUISA FUTURA</strong><span>Comparar as estratégias na mesma tarefa administrativa, medindo recuperação, correção factual, qualidade decisória, custo, latência e esforço de revisão humana.</span></div>
+
+<div class="evidence-line">Fundamentação complementar ao corpus da RSL. Os testes das fontes descrevem desempenho técnico. Efeitos em processos administrativos educacionais exigem avaliação própria.</div>
+
+## Principais Conclusões do Estudo {.short-slide .rsl-novos-dados .conclusao-integrada}
+
+<div class="statement"><strong>Proposição orientadora.</strong> A RSL oferece apoio à proposição de que a IAG apoiada por RAG pode complementar os sistemas de informação existentes. Essa aplicação depende da qualidade das fontes, da rastreabilidade e da revisão humana.</div>
+
+| Questões e objetivos | Resposta do estudo |
+|:---|:---|
+| **QS1 · OE1 — Mapear a produção** | A bibliometria caracterizou 53 documentos. A produção recuperada concentrou-se em 2026 até a data de corte, distribuiu-se por 47 fontes e dependeu da cobertura da Scopus. |
+| **QS2 e QS3 · OE2 — Sintetizar aplicações e resultados** | A revisão de 33 publicações identificou usos em consultas, elaboração de minutas e reúso de conhecimento. Os ganhos observados se referem às tarefas avaliadas. |
+| **QS4 · OE3 — Identificar requisitos e lacunas** | Curadoria das fontes, documentação e revisão humana orientam a aplicação. A transferência para a administração educacional requer avaliação no contexto de uso. |
+
+<div class="discussion-box"><strong>RESPOSTA À QUESTÃO CENTRAL</strong><span>A evidência indica que a IAG apoiada por RAG pode complementar os sistemas de informação em tarefas específicas. O efeito sobre a produtividade geral e a qualidade das decisões ainda precisa ser medido.</span></div>
+
+## Limitações e futuros estudos {.short-slide .limitacoes-separadas}
+
+:::: {.columns}
+::: {.column width="48%"}
+
+| Limitações da revisão |
+|:---|
+| Revisão individual após exposição às propostas da IA, com conferências focais ou indiretas. |
+| Seis textos não recuperados. Cobertura das bases, desenhos e sobreposições limitam a síntese. |
+| Evidência educacional insuficiente para inferir efeitos sobre toda a administração educacional. |
+
+:::
+::: {.column width="48%"}
+
+| Futuros estudos |
+|:---|
+| Comparar busca convencional, RAG, contexto longo e busca iterativa em tarefas administrativas equivalentes. |
+| Medir recuperação, correção factual, qualidade decisória, custo, latência e revisão humana. |
+| Avaliar aplicações em processos educacionais reais e acompanhar adoção e manutenção. |
+
+:::
+::::
+
+## Acesso ao projeto do artigo {.short-slide #acesso-projeto}
+
+<div class="statement">O endereço do repositório será inserido após a confirmação da publicação.</div>
+
+## Referências {.references-combined}
+
+<div class="reference-block"><h3>Fundamentação</h3><div class="reference-text"><div class="ref" id="ref-alavi2001knowledge"><strong>Alavi e Leidner (2001).</strong> Review: Knowledge Management and Knowledge Management Systems: Conceptual Foundations and Research Issues. <em>MIS Quarterly</em>.</div><div class="ref" id="ref-jennex2003organizational"><strong>Jennex e Olfman (2004).</strong> Organizational Memory. In: <em>Handbook on Knowledge Management 1: Knowledge Matters</em>. Springer, pp. 207–234.</div><div class="ref" id="ref-barros2015information"><strong>Barros, Ramos e Perez (2015).</strong> Information Systems and Organizational Memory: A Literature Review. <em>JISTEM</em>.</div><div class="ref" id="ref-antunes2020linking"><strong>Antunes e Pinheiro (2020).</strong> Linking knowledge management, organizational learning and memory. <em>Journal of Innovation & Knowledge</em>.</div><div class="ref" id="ref-versiani2024volatile"><strong>Versiani et al. (2024).</strong> How project knowledge management develops volatile organizational memory.</div><div class="ref" id="ref-rasmussen2026lessons"><strong>Rasmussen et al. (2026).</strong> Improving Lessons Learned Retrieval in Project-Based Organizations through Retrieval-Augmented Generation. <em>Procedia Computer Science</em>.</div><div class="ref" id="ref-lewis2020retrieval"><strong>Lewis et al. (2020).</strong> Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. <em>Advances in Neural Information Processing Systems</em>.</div><div class="ref" id="ref-gao2024retrieval"><strong>Gao et al. (2024).</strong> Retrieval-Augmented Generation for Large Language Models: A Survey. <em>arXiv</em>:2312.10997. Fonte conceitual já adotada; não incluída como artigo da RSL por esta citação.</div></div></div>
+
+<div class="reference-block"><h3>Método</h3><div class="reference-text"><div class="ref" id="ref-donthu2021bibliometric"><strong>Donthu et al. (2021).</strong> How to Conduct a Bibliometric Analysis: An Overview and Guidelines. <em>Journal of Business Research</em>.</div><div class="ref" id="ref-tranfield2003systematic"><strong>Tranfield, Denyer e Smart (2003).</strong> Towards a Methodology for Developing Evidence-Informed Management Knowledge by Means of Systematic Review. <em>British Journal of Management</em>.</div><div class="ref" id="ref-kitchenham2007guidelines"><strong>Kitchenham e Charters (2007).</strong> Guidelines for Performing Systematic Literature Reviews in Software Engineering. Relatório EBSE-2007-01.</div><div class="ref" id="ref-page2021prisma"><strong>Page et al. (2021).</strong> The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. <em>BMJ</em>, 372, n71.</div><div class="ref" id="ref-page2021prismaexplained"><strong>Page et al. (2021).</strong> PRISMA 2020 explanation and elaboration: updated guidance and exemplars for reporting systematic reviews. <em>BMJ</em>, 372, n160.</div><div class="ref" id="ref-rethlefsen2021prismas"><strong>Rethlefsen et al. (2021).</strong> PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews. <em>Systematic Reviews</em>.</div></div></div>
+
+<div class="reference-block"><h3>Apoio responsável da IA</h3><div class="reference-text"><div class="ref" id="ref-flemyng2025position"><strong>Flemyng et al. (2025).</strong> Position statement on artificial intelligence (AI) use in evidence synthesis across Cochrane, the Campbell Collaboration, JBI and the Collaboration for Environmental Evidence 2025. <em>Environmental Evidence</em>.</div><div class="ref" id="ref-gartlehner2025responsible"><strong>Gartlehner et al. (2025).</strong> Responsible Integration of Artificial Intelligence in Rapid Reviews: A Position Statement From the Cochrane Rapid Reviews Methods Group. <em>Cochrane Evidence Synthesis and Methods</em>.</div><div class="ref" id="ref-motzfeldtjensen2025chatgpt"><strong>Motzfeldt Jensen et al. (2025).</strong> ChatGPT-4o can serve as the second rater for data extraction in systematic reviews. <em>PLOS ONE</em>. Título original; não descreve a IA como segundo revisor desta pesquisa.</div><div class="ref" id="ref-wang2025humanai"><strong>Wang et al. (2025).</strong> A foundation model for human-AI collaboration in medical literature mining. <em>Nature Communications</em>. Modelo especializado LEADS; contexto médico.</div><div class="ref" id="ref-cnpq2026integridade"><strong>CNPq (2026).</strong> Política de Integridade na Atividade Científica. Portaria 2.664/2026, art. 9º. Referência nacional, conforme seu âmbito de aplicação.</div><div class="ref" id="ref-nist2023airmf"><strong>NIST (2023).</strong> Artificial Intelligence Risk Management Framework (AI RMF 1.0). NIST AI 100-1. Referência internacional de gestão de riscos.</div></div></div>
+
+<div class="evidence-line">Fontes já adotadas no projeto. Diretrizes institucionais e frameworks de IA apoiam transparência e gestão de riscos; não certificam o estudo nem equivalem à dupla revisão humana.</div>

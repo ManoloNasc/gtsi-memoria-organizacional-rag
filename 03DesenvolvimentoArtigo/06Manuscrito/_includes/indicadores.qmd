@@ -1,0 +1,18 @@
+<!-- Gerado por scripts/sincronizar_componentes.py; não editar manualmente. -->
+
+| Indicador | Resultado |
+| --- | ---: |
+| Documentos | 53 |
+| Fontes distintas | 47 |
+| Autorias (ocorrências autor-documento) | 201 |
+| Autores únicos | 194 |
+| Média de autores por documento | 3,79 |
+| Mediana de autores por documento | 4 |
+| Documentos com autoria única | 4 |
+| Taxa de documentos multiautorados | 92,5% |
+| Índice de colaboração entre documentos multiautorados | 4,02 |
+| Documentos com referências identificadas | 53 |
+| Média de referências por documento | 40 |
+| Mediana de referências por documento | 33 |
+
+: Indicadores descritivos do corpus bibliométrico, conforme tabela publicada da execução. {#tbl-indicadores}

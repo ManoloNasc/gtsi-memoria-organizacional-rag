@@ -1,0 +1,3 @@
+﻿"rede","nos","arestas_analiticas","arestas_exibidas","densidade_analitica","modularidade","comunidades","algoritmo","resolucao","semente","normalizacao"
+"Completa",20,168,45,0.8842105263157896,0.10974337042991422,2,"Louvain",1,20260922,"Força de associação"
+"Sensibilidade sem termos da busca",20,160,45,0.8421052631578947,0.12125075984300196,2,"Louvain",1,20260922,"Força de associação"

@@ -1,0 +1,8 @@
+<!-- Gerado por scripts/sincronizar_componentes.py; não editar manualmente. -->
+
+| Rede | Nós | Arestas analíticas | Arestas exibidas | Densidade | Modularidade | Comunidades |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Completa | 20 | 168 | 45 | 0,884 | 0,110 | 2 |
+| Sensibilidade | 20 | 160 | 45 | 0,842 | 0,121 | 2 |
+
+: Métricas das redes temáticas. Sensibilidade corresponde à rede sem termos da busca. Louvain com resolução 1 e semente 20260922. {#tbl-redes tbl-colwidths="[20, 7, 15, 14, 13, 16, 15]"}

@@ -1,0 +1,9 @@
+project:
+  type: default
+lang: pt-BR
+format:
+  html:
+    theme: cosmo
+    css: 04Recursos/estilos/estilos.css
+execute:
+  enabled: false

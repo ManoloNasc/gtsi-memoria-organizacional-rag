@@ -1,0 +1,55 @@
+artigo:
+  titulo: 'Recuperação contextual da memória organizacional com IAG e RAG: bibliometria e revisão sistemática em
+    processos administrativos e educacionais'
+  titulo_curto: Recuperação contextual da memória organizacional com IAG e RAG
+  autores: Manoel Denis Lopes do Nascimento
+  questao_central: Quais benefícios, limitações, riscos e requisitos de governança são identificados na literatura
+    sobre o uso da IAG apoiada por RAG como complemento aos sistemas de informação na recuperação contextual da
+    memória organizacional e na geração, comunicação e documentação de informações destinadas à tomada de decisão
+    em processos administrativos, especialmente educacionais?
+  proposicao: A literatura tende a caracterizar a IAG apoiada por RAG como uma camada potencialmente complementar aos sistemas de informação existentes para apoiar a recuperação contextual da memória organizacional e a geração, comunicação e documentação de informações destinadas à tomada de decisão em processos administrativos. Os resultados atribuídos a essa utilização dependem da qualidade, da atualidade, da autoridade e da governança das fontes, bem como da rastreabilidade das respostas e da validação humana.
+  proposicao_resumida: A literatura tende a tratar a IAG apoiada por RAG como camada potencialmente complementar aos sistemas de informação. Os resultados dependem das fontes, da rastreabilidade e da validação humana.
+  objetivo_geral: Analisar, por meio de estudo bibliométrico e Revisão Sistemática da Literatura, como a Inteligência
+    Artificial Generativa apoiada por RAG vem sendo aplicada à recuperação da memória organizacional e à geração,
+    comunicação e documentação de informações destinadas ao apoio à tomada de decisão em processos administrativos,
+    com atenção às possibilidades de aplicação em organizações educacionais.
+  objetivos_especificos:
+    oe1: Mapear a estrutura e a distribuição temporal da produção científica recuperada sobre IAG, RAG, memória
+      organizacional e processos administrativos, identificando autores, fontes, redes e temas de pesquisa.
+    oe2: Sistematizar as aplicações, formas de complementaridade aos sistemas de informação, benefícios, limitações
+      e riscos reportados no uso da IAG apoiada por RAG para recuperação contextual e geração, comunicação e documentação
+      de informações destinadas à tomada de decisão.
+    oe3: Identificar os requisitos de governança e as lacunas de pesquisa relevantes para a aplicação dessas soluções
+      em processos administrativos de organizações educacionais.
+  questoes_secundarias:
+    qs1: Como se estrutura e se distribui temporalmente a produção científica recuperada sobre IAG, RAG, memória
+      organizacional e processos administrativos, considerando autores, periódicos, instituições, países, redes
+      de colaboração e temas de pesquisa?
+    qs2: Em quais processos administrativos, fontes de informação e sistemas organizacionais a IAG apoiada por RAG
+      vem sendo utilizada, e como sua complementaridade aos sistemas existentes é caracterizada?
+    qs3: Quais benefícios, limitações e riscos são reportados no uso da IAG apoiada por RAG para recuperação contextual
+      da memória organizacional e geração, comunicação e documentação de informações destinadas à tomada de decisão?
+    qs4: Quais requisitos de governança e quais lacunas de pesquisa devem ser considerados para a aplicação dessas
+      soluções em processos administrativos de organizações educacionais?
+metodo:
+  tipo: Estudo bibliométrico combinado com Revisão Sistemática da Literatura
+  bases: Scopus, Web of Science e SciELO
+  diretriz_relato: PRISMA 2020
+cronograma:
+  inicio_disciplina: 11/08/2026
+  apresentacao_final: 24/11/2026
+  estabilizacao_protocolo: 19/09/2026
+  estabilizacao_protocolo_previsao_original: 28/09/2026
+pessoas:
+  autor_principal: Manoel Denis Lopes do Nascimento
+corpus:
+  documentos: 53
+  scopus_brutos: 50
+  wos_brutos: 25
+  scielo_brutos: 0
+  brutos: 75
+  exclusao_temporal: 1
+  duplicatas: 21
+  calibracao: 10
+  rodada: 20260922-014915
+  data_corte: '2026-09-19'

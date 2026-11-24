@@ -1,0 +1,190 @@
+bloco,campo,definicao_existente,regra_ausencia_proposta
+Aspectos que dependem do corpus,id_estudo,Identificador interno único,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,id_registro_origem,Identificador do registro bibliográfico,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,base_origem,Base ou bases que recuperaram o registro,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,arquivo_origem,Nome do arquivo de exportação,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,doi,"DOI normalizado, quando disponível",Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,status_extracao,"Não iniciada, em andamento, concluída ou revisada",Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,extrator,Autor responsável pela extração,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,data_extracao,Data do preenchimento,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,revisor,Autor responsável pela conferência,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,data_revisao,Data da conferência,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,divergencia,Existência de divergência,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,decisao_divergencia,Resultado da discussão,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,observacao_controle,Informação operacional,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,titulo,Título da publicação,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,autores,Autores,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,ano,Ano de publicação,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,fonte,Periódico,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,volume,Volume,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,numero,Número,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,paginas,Intervalo de páginas ou número do artigo,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,tipo_documental,Artigo original ou artigo de revisão,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,idioma,Idioma principal,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,pais_autores,País ou países das afiliações,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,instituicoes,Instituições dos autores,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,palavras_chave_autores,Palavras-chave informadas pelos autores,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,palavras_chave_indexadas,Palavras-chave da base,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,citacoes_base,"Número de citações, com base e data",Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,acesso_texto,Forma de acesso ao texto completo,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,objetivo_estudo,Qual é o objetivo declarado?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,questao_estudo,Existe questão de pesquisa explícita?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,tipo_estudo,"Empírico, conceitual, revisão, desenvolvimento ou outro?",Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,abordagem,"Qualitativa, quantitativa, mista, computacional ou não informada?",Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,desenho,Qual desenho metodológico foi utilizado?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,unidade_analise,Qual é a unidade de análise?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,dados_utilizados,Quais dados ou documentos foram utilizados?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,participantes,Há participantes ou usuários?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,amostra,Qual o tamanho ou composição da amostra?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,procedimentos,Quais procedimentos principais foram realizados?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,avaliacao,Como a aplicação foi avaliada?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,metricas,Quais métricas foram utilizadas?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,comparacao,"Existe grupo, modelo, método ou sistema de comparação?",Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,periodo_estudo,Qual o período observado?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,limitacoes_autores,Quais limitações foram reconhecidas?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,setor,Em qual setor ocorre a aplicação?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,tipo_organizacao,"Empresa, órgão público, universidade, escola ou outro?",Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,pais_contexto,Em qual país ou região ocorre a aplicação?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,contexto_real,"A aplicação ocorreu em ambiente real, simulado ou conceitual?",Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,processo,Qual processo administrativo ou organizacional está relacionado?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,area_funcional,Qual área funcional está envolvida?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,usuarios,Quem utiliza ou utilizaria a solução?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,tomadores_decisao,Quais tomadores de decisão são mencionados?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,necessidade_informacional,Qual necessidade motivou a aplicação?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,problema_organizacional,Qual problema o estudo pretende enfrentar?,Não informado; não aplicável; incerto — distinguir e justificar
+Aspectos que dependem do corpus,escala_aplicacao,"Piloto, equipe, departamento, organização ou múltiplas organizações?",Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de setor,tecnologia_principal,Qual tecnologia é apresentada?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de setor,termo_utilizado,"O estudo utiliza RAG, IAG, LLM ou outra expressão?",Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de setor,modelo,Qual modelo ou família de modelos é utilizada?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de setor,arquitetura_rag,Como a arquitetura é descrita?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de setor,tipo_recuperacao,"Vetorial, lexical, híbrida, banco de dados ou outra?",Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de setor,modelo_embeddings,"Qual modelo de representação é utilizado? Campo opcional, somente se relevante",Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de setor,banco_vetorial,"Existe banco ou índice vetorial? Campo opcional, somente se relevante",Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de setor,estrategia_fragmentacao,"Como os documentos são divididos? Campo opcional, somente se relevante",Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de setor,reranqueamento,"Existe etapa de reranqueamento? Campo opcional, somente se relevante",Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de setor,geracao_resposta,Como a resposta ou saída é produzida?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de setor,citacao_fontes,A resposta apresenta referências às fontes?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de setor,atualizacao_base,Como as fontes são atualizadas?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de setor,controle_acesso,Existem regras de acesso às fontes?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de setor,participacao_humana,Em quais momentos ocorre validação humana?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de parcimônia,sistemas_existentes,Quais sistemas organizacionais estão relacionados?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de parcimônia,tipo_sistema,"ERP, BI, sistema acadêmico, gestão documental ou outro?",Não informado; não aplicável; incerto — distinguir e justificar
+Regra de parcimônia,fontes_recuperadas,Quais fontes alimentam a recuperação?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de parcimônia,formato_fontes,"Documentos, tabelas, textos, bancos, e-mails ou outros?",Não informado; não aplicável; incerto — distinguir e justificar
+Regra de parcimônia,estrutura_fontes,"Estruturadas, semiestruturadas ou não estruturadas?",Não informado; não aplicável; incerto — distinguir e justificar
+Regra de parcimônia,origem_fontes,"Interna, externa ou combinada?",Não informado; não aplicável; incerto — distinguir e justificar
+Regra de parcimônia,autoridade_fontes,Como a autoridade das fontes é definida?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de parcimônia,versao_fontes,Existe controle de versão?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de parcimônia,vigencia_fontes,Existe controle de vigência?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de parcimônia,qualidade_fontes,Como a qualidade é tratada?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de parcimônia,fragmentacao,O estudo menciona dispersão ou fragmentação?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de parcimônia,integracao,Como ocorre a conexão entre as fontes?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de parcimônia,memoria_organizacional,O estudo menciona ou operacionaliza memória organizacional?,Não informado; não aplicável; incerto — distinguir e justificar
+Tipos iniciais de sistemas,finalidade_aplicacao,Para que a solução é utilizada?,Não informado; não aplicável; incerto — distinguir e justificar
+Tipos iniciais de sistemas,tipo_saida,"Resposta, síntese, recomendação, relatório ou outro?",Não informado; não aplicável; incerto — distinguir e justificar
+Tipos iniciais de sistemas,tarefa_usuario,Qual tarefa é apoiada?,Não informado; não aplicável; incerto — distinguir e justificar
+Tipos iniciais de sistemas,momento_processo,Em qual etapa do processo ocorre o apoio?,Não informado; não aplicável; incerto — distinguir e justificar
+Tipos iniciais de sistemas,sistema_complementado,Qual sistema ou fonte existente é complementado?,Não informado; não aplicável; incerto — distinguir e justificar
+Tipos iniciais de sistemas,forma_complementaridade,Como a complementaridade é caracterizada?,Não informado; não aplicável; incerto — distinguir e justificar
+Tipos iniciais de sistemas,substituicao,O estudo propõe complemento ou substituição?,Não informado; não aplicável; incerto — distinguir e justificar
+Tipos iniciais de sistemas,interacao_usuario,Como ocorre a interação?,Não informado; não aplicável; incerto — distinguir e justificar
+Tipos iniciais de sistemas,personalizacao,A informação é adaptada ao usuário ou papel?,Não informado; não aplicável; incerto — distinguir e justificar
+Tipos iniciais de sistemas,contextualizacao,Como o contexto é incorporado?,Não informado; não aplicável; incerto — distinguir e justificar
+Tipos iniciais de sistemas,rastreabilidade_saida,A saída permite verificar as fontes?,Não informado; não aplicável; incerto — distinguir e justificar
+Tipos iniciais de sistemas,validacao_saida,Quem valida a saída?,Não informado; não aplicável; incerto — distinguir e justificar
+Tipos iniciais de sistemas,uso_decisao,Existe apoio direto ou indireto à decisão?,Não informado; não aplicável; incerto — distinguir e justificar
+Formas candidatas de complementaridade,beneficio_reportado,Qual benefício é apresentado?,Não informado; não aplicável; incerto — distinguir e justificar
+Formas candidatas de complementaridade,indicador_beneficio,Como o benefício foi avaliado?,Não informado; não aplicável; incerto — distinguir e justificar
+Formas candidatas de complementaridade,resultado_quantitativo,Existe resultado numérico?,Não informado; não aplicável; incerto — distinguir e justificar
+Formas candidatas de complementaridade,resultado_qualitativo,Existe evidência qualitativa?,Não informado; não aplicável; incerto — distinguir e justificar
+Formas candidatas de complementaridade,comparacao_beneficio,O benefício foi comparado a quê?,Não informado; não aplicável; incerto — distinguir e justificar
+Formas candidatas de complementaridade,beneficiario,Quem recebe o benefício?,Não informado; não aplicável; incerto — distinguir e justificar
+Formas candidatas de complementaridade,condicao_beneficio,Em quais condições ele ocorre?,Não informado; não aplicável; incerto — distinguir e justificar
+Formas candidatas de complementaridade,evidencia_beneficio,"Qual trecho, tabela ou resultado sustenta a afirmação?",Não informado; não aplicável; incerto — distinguir e justificar
+Formas candidatas de complementaridade,forca_afirmacao,"Demonstração, indicação, percepção ou expectativa?",Não informado; não aplicável; incerto — distinguir e justificar
+Regra interpretativa,limitacao_tecnica,Qual limitação técnica é reportada?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra interpretativa,limitacao_dados,Qual limitação das fontes ou dados é reportada?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra interpretativa,limitacao_metodologica,Qual limitação do estudo é reportada?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra interpretativa,risco,Qual risco é identificado?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra interpretativa,causa_risco,Qual fator origina o risco?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra interpretativa,impacto_risco,Qual consequência é descrita?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra interpretativa,probabilidade,A probabilidade foi avaliada?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra interpretativa,mitigacao,Qual medida de mitigação é proposta?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra interpretativa,risco_residual,Permanecem riscos após a mitigação?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra interpretativa,evidencia_risco,Qual evidência sustenta a identificação?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,dimensao_governanca,Qual dimensão de governança é abordada?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,requisito,Qual requisito é proposto ou identificado?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,responsavel,Quem deve responder pelo requisito?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,mecanismo_controle,Qual controle é indicado?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,validacao_humana,Como ocorre a validação humana?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,autoridade,Como a autoridade das fontes é definida?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,atualidade,Como a atualização das fontes é assegurada?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,rastreabilidade,Como a origem da resposta é preservada?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,transparencia,Como o funcionamento ou limite é comunicado?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,privacidade,Como dados pessoais ou restritos são tratados?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,seguranca,Quais medidas de segurança são apresentadas?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,controle_acesso,Como permissões são respeitadas?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,auditoria,Existe registro para auditoria?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,responsabilizacao,Como responsabilidades são atribuídas?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,monitoramento,Como o desempenho é acompanhado?,Não informado; não aplicável; incerto — distinguir e justificar
+Categorias iniciais de riscos,gestao_mudanca,Como mudanças nas fontes ou modelos são controladas?,Não informado; não aplicável; incerto — distinguir e justificar
+Dimensões iniciais de governança,contexto_educacional,O estudo foi realizado em organização educacional?,Não informado; não aplicável; incerto — distinguir e justificar
+Dimensões iniciais de governança,nivel_educacional,"Educação básica, profissional, superior ou outro?",Não informado; não aplicável; incerto — distinguir e justificar
+Dimensões iniciais de governança,processo_educacional,Qual processo é apoiado?,Não informado; não aplicável; incerto — distinguir e justificar
+Dimensões iniciais de governança,processo_administrativo_educacional,Existe processo administrativo relacionado?,Não informado; não aplicável; incerto — distinguir e justificar
+Dimensões iniciais de governança,usuario_educacional,"Gestor, professor, estudante ou equipe administrativa?",Não informado; não aplicável; incerto — distinguir e justificar
+Dimensões iniciais de governança,sistema_educacional,Qual sistema institucional está relacionado?,Não informado; não aplicável; incerto — distinguir e justificar
+Dimensões iniciais de governança,aplicacao_direta,A aplicação é diretamente administrativa?,Não informado; não aplicável; incerto — distinguir e justificar
+Dimensões iniciais de governança,elemento_transferivel,Qual elemento poderia ser transferido ao contexto educacional?,Não informado; não aplicável; incerto — distinguir e justificar
+Dimensões iniciais de governança,restricao_transferencia,Quais limitações impedem transferência direta?,Não informado; não aplicável; incerto — distinguir e justificar
+Dimensões iniciais de governança,implicacao_educacional,Qual implicação pode ser discutida?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,lacuna_declarada,Qual lacuna é indicada pelos autores?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,pesquisa_futura,Qual pesquisa futura é recomendada?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,lacuna_identificada_revisao,Qual lacuna emerge da comparação dos estudos?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,evidencia_lacuna,Quais estudos sustentam essa interpretação?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,nivel_lacuna,"Técnica, organizacional, metodológica, teórica ou de governança?",Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,aplicacao_educacional_futura,Existe lacuna relevante para educação?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,clareza_objetivo,O objetivo está claramente definido?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,adequacao_metodo,O método é compatível com o objetivo?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,descricao_contexto,O contexto está suficientemente descrito?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,descricao_tecnologia,A aplicação tecnológica está descrita?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,descricao_fontes,As fontes recuperadas estão identificadas?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,transparencia_procedimentos,Os procedimentos são reproduzíveis ou compreensíveis?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,adequacao_avaliacao,A avaliação é adequada à aplicação?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,sustentacao_resultados,Os resultados são sustentados pelas evidências?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,limitacoes_discutidas,As limitações são apresentadas?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,rastreabilidade_evidencias,É possível relacionar afirmações e resultados?,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,avaliacao_geral,Síntese da qualidade ou confiança,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,observacao_qualidade,Justificativa da avaliação,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,id_evidencia,Identificador da evidência,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,id_estudo,Estudo de origem,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,questao_relacionada,"QS2, QS3 ou QS4; QS1 será tratada principalmente pela bibliometria",Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,categoria,Categoria analítica,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,conteudo_extraido,Síntese fiel da informação,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,trecho_original,Trecho curto apenas quando analiticamente necessário,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,pagina,Página,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,secao,Seção,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,tabela_figura,Tabela ou figura relacionada,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,interpretacao_estudo,Interpretação apresentada pelos autores do estudo,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,interpretacao_revisao,Minha interpretação,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,observacao,Limitação ou contexto,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,extrator,Responsável,Não informado; não aplicável; incerto — distinguir e justificar
+Regra de interpretação,revisor,Responsável pela conferência,Não informado; não aplicável; incerto — distinguir e justificar
+Uso de citações diretas,contribuicao_central,Principal contribuição ao artigo,Não informado; não aplicável; incerto — distinguir e justificar
+Uso de citações diretas,questoes_respondidas,"QS2, QS3 e/ou QS4",Não informado; não aplicável; incerto — distinguir e justificar
+Uso de citações diretas,aplicacao,Síntese da aplicação,Não informado; não aplicável; incerto — distinguir e justificar
+Uso de citações diretas,complementaridade,Síntese da relação com sistemas,Não informado; não aplicável; incerto — distinguir e justificar
+Uso de citações diretas,beneficios,Síntese dos benefícios,Não informado; não aplicável; incerto — distinguir e justificar
+Uso de citações diretas,limitacoes_riscos,Síntese das limitações e riscos,Não informado; não aplicável; incerto — distinguir e justificar
+Uso de citações diretas,governanca,Síntese dos requisitos,Não informado; não aplicável; incerto — distinguir e justificar
+Uso de citações diretas,educacao,Relação direta ou potencial com educação,Não informado; não aplicável; incerto — distinguir e justificar
+Uso de citações diretas,qualidade,Consideração sobre a confiança,Não informado; não aplicável; incerto — distinguir e justificar
+Uso de citações diretas,observacao_final,Informação relevante para a síntese,Não informado; não aplicável; incerto — distinguir e justificar
+Estrutura recomendada,não informado,"A informação seria aplicável, mas não foi apresentada",Não informado; não aplicável; incerto — distinguir e justificar
+Estrutura recomendada,não aplicável,O campo não se aplica ao desenho ou contexto,Não informado; não aplicável; incerto — distinguir e justificar
+Estrutura recomendada,não identificado,"A informação pode existir, mas não foi localizada",Não informado; não aplicável; incerto — distinguir e justificar
+Estrutura recomendada,incerto,A informação é ambígua,Não informado; não aplicável; incerto — distinguir e justificar
+Estrutura recomendada,a confirmar,A verificação ainda não foi concluída,Não informado; não aplicável; incerto — distinguir e justificar
+Metadados da relação temática por documento/bloco,relacao_tematica,Relação do documento com o bloco temático: Não identificada; Baixa; Moderada; Alta. Não avaliada é estado de leitura pendente. Não se aplica para blocos de caracterização e controle.,Não avaliada quando pendente; Não identificada não comprova inexistência; registrar localização ou a busca dirigida sem evidência
+Metadados da relação temática por documento/bloco,justificativa_relacao,Explicar por que o texto sustenta o nível atribuído ao bloco; não confundir intensidade temática e qualidade da evidência.,Não avaliada quando pendente; Não identificada não comprova inexistência; registrar localização ou a busca dirigida sem evidência
+Metadados da relação temática por documento/bloco,pagina_secao_tabela,"Localização da evidência: página(s) PDF e, quando útil, seção/tabela/figura. Campo já existente no esquema, reutilizado para sustentar a relação e a justificativa.",Não avaliada quando pendente; Não identificada não comprova inexistência; registrar localização ou a busca dirigida sem evidência
