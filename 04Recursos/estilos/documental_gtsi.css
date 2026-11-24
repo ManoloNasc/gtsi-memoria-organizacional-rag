@@ -1,0 +1,31 @@
+/* GTSI, adaptação local 03/10/2026; origem e escopo em 04Recursos/README04.md.
+   Não importa recursos da dissertação e não modifica o template PDF do artigo. */
+body { font-family: "Segoe UI", Arial, sans-serif; line-height: 1.65; color: #253342; }
+main.content .title, main.content h1, main.content h2, main.content h3 { color: #285f8f; }
+main.content .title { font-weight: 750; }
+main.content h2 { border-bottom: 1px solid #dce3ea; padding-bottom: .4rem; margin-top: 2rem; }
+main.content table { width:100%; font-size:.93rem; border-collapse:collapse; }
+main.content th, main.content td { vertical-align:top; overflow-wrap:break-word; padding:.65rem .7rem; }
+main.content thead th { background:#285f8f; color:#fff; border-bottom:2px solid #285f8f; }
+main.content tbody tr:nth-child(even) { background:#f5f8fb; }
+main.content blockquote { background:#f5f8fb; color:#405366; border-left:4px solid #285f8f; padding:.7rem 1rem; }
+main.content .callout { border-radius:5px; }
+main.content .mermaid { text-align:center; }
+main.content .mermaid svg, main.content .cell-output-display svg { max-width:100%; height:auto!important; }
+main.content figcaption { color:#566577; font-size:.88rem; }
+#TOC { border-left:2px solid #dce3ea; padding-left:.75rem; }
+@media print {
+ body { font-family:"Segoe UI",Arial,sans-serif; font-size:10.5pt; color:#17212b; }
+ #quarto-margin-sidebar, #quarto-sidebar, .code-copy-button, .code-tools-button { display:none!important; }
+ main.content { max-width:none!important; width:100%!important; margin:0!important; }
+ #quarto-content { display:block!important; }
+ h1,h2,h3,h4 { break-after:avoid; }
+ .page-break-before { break-before:page; }
+ p { orphans:3; widows:3; }
+ table { font-size:8.6pt!important; line-height:1.35; }
+ td,th { padding:6px!important; }
+ thead { display:table-header-group; }
+ tr,.callout,blockquote,figure { break-inside:avoid; }
+ .mermaid svg, .cell-output-display svg { max-height:170mm!important; max-width:100%!important; }
+ pre { white-space:pre-wrap; overflow-wrap:anywhere; }
+}
